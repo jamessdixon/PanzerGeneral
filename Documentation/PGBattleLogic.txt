@@ -1,0 +1,451 @@
+        public void CalculateBattle(Unit attackingUnit, Unit defendingUnit, Tile startingTile, Tile endingTile, TerrainCondition terrainCondition)
+        {
+            //TODO: rename attacking to starting unit
+            //TODO: rename defending to ending unit
+            int priorBattleDefendingStrength = defendingUnit.CurrentStrength;
+            int priorBattleAttackingStrength = attackingUnit.CurrentStrength;
+
+            //Surprise
+            Boolean surprised = false;
+            if (!attackingUnit.VisibleTiles.Contains(endingTile))
+            {
+                surprised = true;
+            }
+
+            //Supporting Artillery (For Ground Battles only)
+            if (attackingUnit.Equipment.EquipmentClass.EquipmentGroup.EquipmentGroupId == 0)
+            {
+                CalculateSupportingArtillery(attackingUnit, startingTile, endingTile, terrainCondition, surprised);
+            }
+            //Supporting Air Defense (For Air Battles only)
+            if (attackingUnit.Equipment.EquipmentClass.EquipmentGroup.EquipmentGroupId == 1)
+            {
+                CalculateSupportingAirDefense(attackingUnit, startingTile, endingTile, terrainCondition, surprised);
+            }
+
+            //if battle can still occur
+            Tile retreatTile = null;
+            if ((attackingUnit.CurrentStrength / priorBattleAttackingStrength) > .5)
+            {
+                bool defenseRetreat = Game.BattleFactory.CalculateBattle(attackingUnit, defendingUnit, startingTile, endingTile, terrainCondition, surprised);
+                if (defenseRetreat == true)
+                {
+                    retreatTile = DetermineRetreatTile(endingTile, startingTile);
+                    if (retreatTile == null)
+                        retreatTile = startingTile;
+                }
+
+                attackingUnit.CanAttack = false;
+                //UpdateUIWithBattle(closestTile, priorBattleDefendingStrength, priorBattleAttackingStrength, retreatTile);
+            }
+
+        }
+
+        public void CalculateSupportingArtillery(Unit attackingUnit, Tile startingTile, Tile endingTile, TerrainCondition terrainCondition, Boolean surprised)
+        {
+            foreach (Tile tile in GetAdjacentTiles(endingTile,1))
+            {
+                if (tile.GroundUnit != null)
+                {
+                    if (tile.GroundUnit.SideId == endingTile.GroundUnit.SideId)
+                    {
+                        if (tile.GroundUnit.Equipment.EquipmentClass.EquipmentClassId == 4)
+                        {
+                            Game.BattleFactory.CalculateBattle(tile.GroundUnit, attackingUnit, startingTile, endingTile, terrainCondition, surprised);
+                        }
+                    }
+                }
+            }
+        }
+
+        public void CalculateSupportingAirDefense(Unit attackingUnit, Tile startingTile, Tile endingTile, TerrainCondition terrainCondition, Boolean surprised)
+        {
+            foreach (Tile tile in GetAdjacentTiles(endingTile,1))
+            {
+                if (tile.GroundUnit != null || tile.AirUnit != null)
+                {
+                    if (tile.GroundUnit.SideId == endingTile.GroundUnit.SideId)
+                    {
+                        if (tile.GroundUnit.Equipment.EquipmentClass.EquipmentClassId == 5 ||
+                            tile.GroundUnit.Equipment.EquipmentClass.EquipmentClassId == 6)
+                        {
+                            Game.BattleFactory.CalculateBattle(tile.GroundUnit, attackingUnit, startingTile, endingTile, terrainCondition, surprised);
+                        }
+                        if (tile.GroundUnit.Equipment.EquipmentClass.EquipmentClassId == 8)
+                        {
+                            Game.BattleFactory.CalculateBattle(tile.AirUnit, attackingUnit, startingTile, endingTile, terrainCondition, surprised);
+                        }
+                    }
+                }
+            }
+        }
+
+        public Tile DetermineRetreatTile(Tile defendingTile, Tile attackingTile)
+        {
+            Tile retreatTile = null;
+            Tile tile = null;
+            List<Tile> adjacentTiles = GetAdjacentTiles(defendingTile, 1);
+            List<Int32> retreatPaths = new List<int>();
+
+            int attackPathNumber = 0;
+            for (int i = 0; i < adjacentTiles.Count; i++)
+            {
+                tile = adjacentTiles[i];
+                if (tile == attackingTile)
+                {
+                    attackPathNumber = i;
+                }
+            }
+
+            switch (attackPathNumber)
+            {
+                case 0:
+                    int[] path0 = new int[] { 3, 2, 4, 1, 5 };
+                    retreatPaths.AddRange(path0);
+                    break;
+                case 1:
+                    int[] path1 = new int[] { 4, 3, 5, 2, 0 };
+                    retreatPaths.AddRange(path1);
+                    break;
+                case 2:
+                    int[] path2 = new int[] { 5, 0, 4, 1, 3 };
+                    retreatPaths.AddRange(path2);
+                    break;
+                case 3:
+                    int[] path3 = new int[] { 0, 1, 5, 2, 4 };
+                    retreatPaths.AddRange(path3);
+                    break;
+                case 4:
+                    int[] path4 = new int[] { 1, 2, 0, 3, 5 };
+                    retreatPaths.AddRange(path4);
+                    break;
+                case 5:
+                    int[] path5 = new int[] { 2, 1, 3, 0, 4 };
+                    retreatPaths.AddRange(path5);
+                    break;
+            }
+
+            foreach (Int32 retreatTileNumber in retreatPaths)
+            {
+                if (adjacentTiles[retreatTileNumber].GroundUnit == null)
+                    retreatTile = adjacentTiles[retreatTileNumber];
+                break;
+            }
+
+            return retreatTile;
+        }
+
+        private void CalculateUnitsMovementAfterBattle(Tile endingTile, Tile retreatTile)
+        {
+            //    Unit attackingUnit = Game.ActiveHex.CurrentUnit;
+            //    Unit defendingUnit = closestHex.CurrentUnit;
+            //    Hex attackingHex = Game.ActiveHex;
+            //    Hex defendingHex = closestHex;
+            //    Country currentCountry = null;
+
+
+            //    //These 3 - defense and offense do not move
+            //    //Both destroyed
+            //    if (defendingUnit == null && attackingUnit == null)
+            //    {
+            //        currentCountry = defendingHex.CurrentCountry;
+            //        Game.HexFactory.UpdateHex(defendingHex, defendingUnit, currentCountry);
+            //        currentCountry = attackingHex.CurrentCountry;
+            //        Game.HexFactory.UpdateHex(attackingHex, attackingUnit, currentCountry);
+            //    }
+            //    //Defense survives, attack destroyed
+            //    if (defendingUnit != null && attackingUnit == null)
+            //    {
+            //        currentCountry = defendingHex.CurrentCountry;
+            //        Game.HexFactory.UpdateHex(defendingHex, defendingUnit, currentCountry);
+            //        currentCountry = attackingHex.CurrentCountry;
+            //        Game.HexFactory.UpdateHex(attackingHex, attackingUnit, currentCountry);
+            //    }
+            //    //Both Survive - Defense Stays
+            //    if (defendingUnit != null && attackingUnit != null && retreatHex == null)
+            //    {
+            //        currentCountry = defendingHex.CurrentCountry;
+            //        Game.HexFactory.UpdateHex(defendingHex, defendingUnit, currentCountry);
+            //        currentCountry = attackingHex.CurrentCountry;
+            //        Game.HexFactory.UpdateHex(attackingHex, attackingUnit, currentCountry);
+            //    }
+
+            //    //Rest of If - attack is moving into defenders square
+            //    //Set up country for attack - also add in prestige for capturing
+            //    if (attackingUnit.Equipment.EquipmentClass.CanCaptureHexes)
+            //    {
+            //        currentCountry = attackingUnit.Country;
+
+            //    }
+            //    else
+            //    {
+            //        currentCountry = defendingHex.CurrentCountry;
+            //    }
+            //    //Attack survives, defense destroyed
+            //    if (defendingUnit == null && attackingUnit != null)
+            //    {
+            //        MoveGameActiveUnit(defendingHex);
+            //    }
+
+            //    //Both Survive - Defense Retreats - 3 hexes!
+            //    if (defendingUnit != null && attackingUnit != null && retreatHex != null)
+            //    {
+            //        MoveGameActiveUnit(defendingHex);
+            //        MoveRetreatingUnit(defendingUnit, retreatHex);
+            //    }
+
+        }
+
+        //public void UpdateUIWithBattle(Hex closestHex, int priorBattleDefendingStrength, int priorBattleAttackingStrength, Hex retreatHex)
+        //{
+        //    if (priorBattleDefendingStrength > closestHex.CurrentUnit.CurrentStrength)
+        //    {
+        //        closestHex.ExplodeCanvas.Opacity = 1;
+        //        closestHex.ExplodeStoryboard.Begin();
+        //        Game.SoundFactory.BattleSound.Play();
+        //    }
+        //    if (priorBattleAttackingStrength > Game.ActiveHex.CurrentUnit.CurrentStrength)
+        //    {
+        //        Game.ActiveHex.ExplodeCanvas.Opacity = 1;
+        //        Game.ActiveHex.ExplodeStoryboard.Begin();
+        //    }
+        //    //Remove Units
+        //    if (closestHex.CurrentUnit.CurrentStrength <= 0)
+        //    {
+        //        closestHex.CurrentUnit = null;
+        //        Microsoft.Devices.VibrateController.Default.Start(TimeSpan.FromSeconds(1));
+        //    }
+        //    if (Game.ActiveHex.CurrentUnit.CurrentStrength <= 0)
+        //    {
+        //        Game.ActiveHex.CurrentUnit = null;
+        //        Microsoft.Devices.VibrateController.Default.Start(TimeSpan.FromSeconds(1));
+        //    }
+        //    if (retreatHex == closestHex)
+        //    {
+        //        closestHex.CurrentUnit = null;
+        //        Microsoft.Devices.VibrateController.Default.Start(TimeSpan.FromSeconds(1));
+        //    }
+
+
+        //private List<Hex> GetGroundMovableHexes(Hex startHex)
+        //{
+        //    Unit unit = Game.ActiveHex.CurrentUnit;
+        //    int hexMovementCost = 0;
+        //    int unitTotalMovementPoints = unit.Equipment.BaseMovement;
+        //    int projectedPathMovementPoints = 0;
+        //    List<Hex> returnValue = new List<Hex>();
+        //    List<Hex> currentLayerOfHexes = null;
+        //    List<Hex> allAdjacentHexesToActiveHex = null;
+        //    List<Hex> unvisitedAdjacentHexesToActiveHex = null;
+        //    List<MovementPath> movementPaths = new List<MovementPath>(); //All Movement paths - match returnValue's Hexes 1 to 1
+        //    List<MovementPath> targetMovementPaths = null;
+
+        //    //Seed with Origin
+        //    MovementPath baseMovementPath = new MovementPath();
+        //    baseMovementPath.Hexes.Add(startHex);
+        //    baseMovementPath.TotalMovementPointsUsed = 0;
+        //    movementPaths.Add(baseMovementPath);
+        //    returnValue.Add(startHex);
+
+        //    //Max Movement Based On Fuel
+        //    if (unit.Equipment.MovementType.IsMotorized)
+        //    {
+        //        if (unit.CurrentFuel < unit.Equipment.BaseMovement)
+        //        {
+        //            unitTotalMovementPoints = unit.CurrentFuel;
+        //        }
+        //    }
+
+        //    for (int i = 0; i <= unitTotalMovementPoints; i++) //lTE b/c initial hex has no cost
+        //    {
+        //        //Get current layer of hexes && movement paths
+        //        currentLayerOfHexes = new List<Hex>();
+        //        var movementPathQuery = (from mp in movementPaths
+        //                                 where mp.MovementPathDepth == i
+        //                                 select mp);
+
+        //        foreach (MovementPath movementPath in movementPathQuery)
+        //        {
+        //            currentLayerOfHexes.Add(movementPath.EndHex);
+        //        }
+
+        //        //Loop though current layer get list adjacent hexes
+        //        foreach (Hex currentHex in currentLayerOfHexes)
+        //        {
+        //            //Get the movement path associated with the current Hex
+        //            MovementPath currentMovementPath = (from mp in movementPaths
+        //                                                where mp.EndHex == currentHex
+        //                                                select mp).FirstOrDefault();
+
+        //            //loop through adjacent hexes for each hex
+        //            //figure out if hex is already been added to the final list
+        //            //If not, add to the unvisited List && create a potential movement path
+        //            //Copy the current movement path's hexes to the potential
+        //            //&& add in the target hex to the path
+        //            allAdjacentHexesToActiveHex = GetAdjacentHexes(currentHex);
+        //            targetMovementPaths = new List<MovementPath>();
+        //            unvisitedAdjacentHexesToActiveHex = new List<Hex>();
+        //            MovementPath targetMovementPath = null;
+        //            foreach (Hex adjacentHex in allAdjacentHexesToActiveHex)
+        //            {
+        //                if (!InHexList(returnValue, adjacentHex))
+        //                {
+        //                    unvisitedAdjacentHexesToActiveHex.Add(adjacentHex);
+        //                    targetMovementPath = new MovementPath();
+        //                    foreach (Hex hex in currentMovementPath.Hexes)
+        //                    {
+        //                        targetMovementPath.Hexes.Add(hex);
+        //                    }
+        //                    //targetMovementPath.Hexes.Add(adjacentHex);
+        //                    targetMovementPath.TotalMovementPointsUsed = currentMovementPath.TotalMovementPointsUsed;// +Game.HexFactory.CalculateMovementCost(adjacentHex, unit);
+        //                    targetMovementPaths.Add(targetMovementPath);
+        //                }
+        //            }
+
+        //            //figure out if hex is reachable
+        //            //If so, add to Return Value
+        //            //And add the path to get there to the path list
+        //            foreach (Hex adjacentHex in unvisitedAdjacentHexesToActiveHex)
+        //            {
+        //                targetMovementPath = (from mp in targetMovementPaths
+        //                                      where mp.EndHex == currentHex
+        //                                      select mp).FirstOrDefault();
+
+        //                hexMovementCost = Game.HexFactory.CalculateMovementCost(adjacentHex, unit);
+        //                //additional modifiers to movement cost
+        //                //Can't go onto river past depth 1 path
+        //                if (targetMovementPath.MovementPathDepth > 1)
+        //                {
+        //                    if (adjacentHex.CurrentTerrain.RiverInd == true && adjacentHex.CurrentTerrain.RoadInd == false)
+        //                    {
+        //                        if (adjacentHex.CurrentUnit != null)
+        //                        {
+        //                            if (adjacentHex.CurrentUnit.SideId == unit.SideId)
+        //                            {
+        //                                if (!adjacentHex.CurrentUnit.Equipment.CanBridgeRivers)
+        //                                {
+        //                                    hexMovementCost = 99;
+        //                                }
+        //                            }
+        //                            else
+        //                            {
+        //                                hexMovementCost = 99;
+        //                            }
+        //                        }
+        //                        else
+        //                        {
+        //                            hexMovementCost = 99;
+        //                        }
+        //                    }
+        //                }
+        //                if (adjacentHex.CurrentUnit != null)
+        //                {
+        //                    //Can't go into or through enemy hex
+        //                    if (adjacentHex.CurrentUnit.SideId != unit.SideId)
+        //                        hexMovementCost = 99;
+        //                }
+
+        //                projectedPathMovementPoints = targetMovementPath.TotalMovementPointsUsed + hexMovementCost;
+        //                if (projectedPathMovementPoints <= unitTotalMovementPoints) //GTE b/c initial hex doesn't count
+        //                {
+        //                    adjacentHex.MovementCost = projectedPathMovementPoints;
+        //                    returnValue.Add(adjacentHex);
+        //                    targetMovementPath.Hexes.Add(adjacentHex);
+        //                    targetMovementPath.TotalMovementPointsUsed = projectedPathMovementPoints;
+        //                    movementPaths.Add(targetMovementPath);
+        //                }
+        //            }
+        //        }
+        //    }
+
+        //    bool keepLooping = true;
+        //    while (keepLooping == true)
+        //    {
+        //        int totalHexes = returnValue.Count;
+        //        for (int i = 0; i < returnValue.Count; i++)
+        //        {
+        //            if (returnValue[i].CurrentUnit != null)
+        //                returnValue.RemoveAt(i);
+
+        //            if (totalHexes == returnValue.Count)
+        //                keepLooping = false;
+        //        }
+
+        //    }
+        //    return returnValue;
+        //}
+
+        //public List<Hex> GetAttackableHexes(Hex startHex)
+        //{
+        //    List<Hex> attackableHexes = new List<Hex>();
+        //    Unit unit = startHex.CurrentUnit;
+        //    if (unit != null)
+        //    {
+        //        List<Hex> adjacentHexes = GetAdjacentHexes(startHex);
+        //        if (unit.CurrentAmmo > 0)
+        //        {
+        //            if (unit.Equipment.Range == 0)
+        //                foreach (Hex hex in adjacentHexes)
+        //                {
+        //                    if (hex.CurrentUnit != null)
+        //                    {
+        //                        if (hex.CurrentUnit.SideId != unit.SideId)
+        //                        {
+        //                            attackableHexes.Add(hex);
+        //                        }
+        //                    }
+        //                }
+        //            else
+        //            {
+        //                foreach (Hex hex in GetTotalAdjacentHexes(startHex, unit.Equipment.Range))
+        //                {
+        //                    if (hex.CurrentUnit != null)
+        //                    {
+        //                        if (hex.CurrentUnit.SideId != unit.SideId)
+        //                        {
+        //                            attackableHexes.Add(hex);
+        //                        }
+        //                    }
+        //                }
+        //            }
+        //        }
+        //    }
+        //    return attackableHexes;
+        //}
+
+        //public List<Hex> GetVisibleHexes(Hex startHex, int depth)
+        //{
+        //    List<Hex> visibleHexes = new List<Hex>();
+        //    Unit unit = startHex.CurrentUnit;
+        //    if (unit != null)
+        //    {
+        //        visibleHexes = GetTotalAdjacentHexes(startHex, unit.Equipment.Spotting);
+        //    }
+        //    return visibleHexes;
+        //}
+
+        //public bool InHexList(List<Hex> hexes, Hex testHex)
+        //{
+        //    bool returnValue = true;
+
+        //    Hex existingHex = (from h in hexes
+        //                       where h.HexId == testHex.HexId
+        //                       select h).FirstOrDefault();
+
+        //    if (existingHex == null)
+        //        returnValue = false;
+
+        //    return returnValue;
+        //}
+
+        //public List<Hex> GetTotalAdjacentHexes(Hex currentHex, Int32 maxDistance)
+        //{
+        //    List<Hex> hexes = new List<Hex>();
+        //    List<Hex> tempList = GetAdjacentHexes(currentHex);
+        //    foreach (Hex hex in tempList)
+        //    {
+        //        if (!InHexList(hexes,hex))
+        //            GetAdjacentHexes(currentHex, hexes, hex, tempList, 0, maxDistance);
+        //    }
+        //    return hexes;
+        //}
