@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot>
+<Campaign_StepType>
+<CampaignStepTypeId>0</CampaignStepTypeId>
+<CampaginStepTypeDesc>Major Victory</CampaginStepTypeDesc>
+</Campaign_StepType>
+<Campaign_StepType>
+<CampaignStepTypeId>1</CampaignStepTypeId>
+<CampaginStepTypeDesc>Minor Victory</CampaginStepTypeDesc>
+</Campaign_StepType>
+<Campaign_StepType>
+<CampaignStepTypeId>2</CampaignStepTypeId>
+<CampaginStepTypeDesc>Loss</CampaginStepTypeDesc>
+</Campaign_StepType>
+</dataroot>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot>
+<EquipmentLossCalculationGroup>
+<EquipmentLossCalculationGroupId>0</EquipmentLossCalculationGroupId>
+<EquipmentLossCalculationGroupDescription>Standard</EquipmentLossCalculationGroupDescription>
+</EquipmentLossCalculationGroup>
+<EquipmentLossCalculationGroup>
+<EquipmentLossCalculationGroupId>1</EquipmentLossCalculationGroupId>
+<EquipmentLossCalculationGroupDescription>Special</EquipmentLossCalculationGroupDescription>
+</EquipmentLossCalculationGroup>
+</dataroot>

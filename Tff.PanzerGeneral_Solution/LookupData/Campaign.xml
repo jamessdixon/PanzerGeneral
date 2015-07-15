@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot>
+<Campaign>
+<CampaignId>0</CampaignId>
+<CampaignName>1939</CampaignName>
+<CampaignTitle>Poland</CampaignTitle>
+<CampaignDescription>&quot;Germany launches a series of blitzkrieg attacks in Europe, beginning with Poland.&quot;</CampaignDescription>
+<Side>0</Side>
+<Nation>8</Nation>
+<FreeEliteReplacement>0</FreeEliteReplacement>
+<StartingCampaignStepId>0</StartingCampaignStepId>
+</Campaign>
+<Campaign>
+<CampaignId>1</CampaignId>
+<CampaignName>1941 West</CampaignName>
+<CampaignTitle>North Africa</CampaignTitle>
+<CampaignDescription>&quot;Hungry for the oil of the Middle East, the Axis moves to sweep through North Africa.&quot;</CampaignDescription>
+<Side>0</Side>
+<Nation>8</Nation>
+<FreeEliteReplacement>0</FreeEliteReplacement>
+<StartingCampaignStepId>0</StartingCampaignStepId>
+</Campaign>
+<Campaign>
+<CampaignId>2</CampaignId>
+<CampaignName>1941 East</CampaignName>
+<CampaignTitle>Barbarossa</CampaignTitle>
+<CampaignDescription>&quot;In the greatest invasion in history, the Axis strikes into the Soviet Union.&quot;</CampaignDescription>
+<Side>0</Side>
+<Nation>8</Nation>
+<FreeEliteReplacement>0</FreeEliteReplacement>
+<StartingCampaignStepId>0</StartingCampaignStepId>
+</Campaign>
+<Campaign>
+<CampaignId>3</CampaignId>
+<CampaignName>1943 West</CampaignName>
+<CampaignTitle>Husky</CampaignTitle>
+<CampaignDescription>&quot;With most of her forces committed to the eastern front, the Axis must defend the soft underbelly of Europe from the Allies.&quot;</CampaignDescription>
+<Side>0</Side>
+<Nation>8</Nation>
+<FreeEliteReplacement>0</FreeEliteReplacement>
+<StartingCampaignStepId>0</StartingCampaignStepId>
+</Campaign>
+<Campaign>
+<CampaignId>4</CampaignId>
+<CampaignName>1943 East</CampaignName>
+<CampaignTitle>Kharkov</CampaignTitle>
+<CampaignDescription>&quot;Facing overextended Soviet forces, the Axis tries to regain the initiative in the East.&quot;</CampaignDescription>
+<Side>0</Side>
+<Nation>8</Nation>
+<FreeEliteReplacement>0</FreeEliteReplacement>
+<StartingCampaignStepId>0</StartingCampaignStepId>
+</Campaign>
+</dataroot>

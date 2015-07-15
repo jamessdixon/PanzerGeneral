@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot>
+<EquipmentGroup>
+<EquipmentGroupId>0</EquipmentGroupId>
+<EquipmentGroupDesc>Ground</EquipmentGroupDesc>
+</EquipmentGroup>
+<EquipmentGroup>
+<EquipmentGroupId>1</EquipmentGroupId>
+<EquipmentGroupDesc>Air</EquipmentGroupDesc>
+</EquipmentGroup>
+<EquipmentGroup>
+<EquipmentGroupId>2</EquipmentGroupId>
+<EquipmentGroupDesc>Naval</EquipmentGroupDesc>
+</EquipmentGroup>
+</dataroot>

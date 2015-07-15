@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot>
+<ObjectiveType>
+<ObjectiveTypeId>0</ObjectiveTypeId>
+<ObjectiveTypeDescription>AxisAttack</ObjectiveTypeDescription>
+</ObjectiveType>
+<ObjectiveType>
+<ObjectiveTypeId>1</ObjectiveTypeId>
+<ObjectiveTypeDescription>AxisDefend</ObjectiveTypeDescription>
+</ObjectiveType>
+</dataroot>

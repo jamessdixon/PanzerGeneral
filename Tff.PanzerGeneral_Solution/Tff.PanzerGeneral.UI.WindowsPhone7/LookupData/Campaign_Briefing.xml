@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot>
+<Briefing>
+<BriefingId>0</BriefingId>
+<BriefingDesc>Your first mission in operation Fall Weiss, the conquest of Poland, is to capture the key cities of Kutno and Lodz by September 10th. This keeps open the possibility of conquering Poland before the French and British can launch an attack on Germany. If these objectives are taken before September 10th, additional forces may be available to you for the assault on Warsaw.
+</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>1</BriefingId>
+<BriefingDesc>Your success in phase one of the attack on Poland was outstanding. Due to your rapid advance, we have made additional resources available to you for the assault on Warsaw.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>2</BriefingId>
+<BriefingDesc>Congratulations on completing your mission satisfactorily.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>3</BriefingId>
+<BriefingDesc>As you were unable to capture your objectives as ordered, France and England have launched an offensive against Germany that has forced us to suspend the attack on Poland.
+Your services are no longer needed.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>4</BriefingId>
+<BriefingDesc>Your next assignment is to take Warsaw and several nearby Polish cities by no later than September 30th. Intelligence warns us that the French and British are preparing for an attack towards the Rhine within 2-3 weeks, so it is important to take all of your objectives as soon as possible.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>5</BriefingId>
+<BriefingDesc>Your success in Poland has impressed the General Staff.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>6</BriefingId>
+<BriefingDesc>The General Staff is pleased by your success in Poland.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>7</BriefingId>
+<BriefingDesc>For your excellent leadership, you have been appointed as the commander of our combined land, naval, and air assault on Norway, code named Operation Weserubung. Your goal is to capture all objectives in southern and central Norway by May 3rd. Your forces must be free to redeploy for the upcoming campaign in France which is slated to begin May 10th. You should complete your mission as early as you can. This will allow us a greater chance to rest, refit and upgrade your troops prior to the invasion of France.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>8</BriefingId>
+<BriefingDesc>The General Staff commends you for your outstanding achievements in Norway.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>9</BriefingId>
+<BriefingDesc>Congratulations on meeting your objectives in Norway.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>10</BriefingId>
+<BriefingDesc>We are disappointed with your failure to take your objectives in Norway. However, due to your previous success we are willing to overlook your mistakes in Norway and give you another chance to prove you are worthy of command.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>11</BriefingId>
+<BriefingDesc>We have given you the key role in the invasion of France. You are to annihilate the French, British and Belgian armies located west and north of the Ardennes. In order to ensure their destruction, the early capture of Paris, and the opportunity to invade England this summer,  you must advance to the English Channel and capture all of the objectives no later than June 8th. A swift blow, delivered to the Allied armies as soon as possible, is essential to allow us time for an invasion of England this year.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>12</BriefingId>
+<BriefingDesc>Your blitzkrieg through Belgium was most impressive and has given us a great opportunity to conquer France in time for an assault on England this year.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>13</BriefingId>
+<BriefingDesc>Congratulations on completing your most recent campaign on schedule.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>14</BriefingId>
+<BriefingDesc>Unfortunately, it now appears that the French armies have regrouped and may be well prepared to resist our final drive on Paris.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>15</BriefingId>
+<BriefingDesc>Your recent performance was very dissapointing.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>16</BriefingId>
+<BriefingDesc>All that stands between us and victory in the west is a quick knock-out blow against the disorganized allied armies in France.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>17</BriefingId>
+<BriefingDesc>Congratulations on your outstanding victory in France. My humiliation in 1918 is avenged.
+We are preparing for operations next year against the British in North Africa as well as against Yugoslavia and Greece. Your performance to date has been outstanding and we will be happy to allow you to choose your next operation for yourself and your army.
+Would you prefer to fight next in North Africa or in the Balkans?
+
+&lt;a href=&quot;North_Africa&quot;&gt;North Africa&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;Balkans&quot;&gt;Balkans&lt;/a&gt;
+</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>18</BriefingId>
+<BriefingDesc>We were pleased by your victory in France. Unfortunately, we did not have enough time to invade England last summer.
+We are preparing for operations next year against the British in North Africa as well as against Yugoslavia and Greece. Your performance to date has been outstanding and we will be happy to allow you to choose your next operation for yourself and your army.
+Would you prefer to fight next in North Africa or in the Balkans?
+
+&lt;a href=&quot;North_Africa&quot;&gt;North Africa&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;Balkans&quot;&gt;Balkans&lt;/a&gt;
+</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>19</BriefingId>
+<BriefingDesc>Your failure to crush France has committed us to a protracted war. Already, the RAF has successfully bombed Berlin.
+Your services are no longer needed.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>20</BriefingId>
+<BriefingDesc>Your services are no longer needed.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>21</BriefingId>
+<BriefingDesc>Your mission is to break the French &apos;will to resist&apos; by taking Paris and all other objectives by no later than July 30th.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>22</BriefingId>
+<BriefingDesc>All that stands between us and victory in the west is a quick knock-out blow against the disorganized allied armies in France.
+Your mission is to break the French &apos;will to resist&apos; by taking Paris and all other objectives by no later than July 30th.
+Although it now appears that we have lost the chance to invade England this summer, it is imperative that we destroy the French armies as quickly as possible. Your future in the Wehrmacht will be heavily influenced by your performance in this campaign.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>23</BriefingId>
+<BriefingDesc>All that stands between us and victory in the west is a quick knock-out blow against the disorganized allied armies in France.
+Your mission is to break the French &apos;will to resist&apos; by taking Paris and all other objectives by no later than July 30th.
+However, due to the difficulties involved in preparing for an invasion of England, it is essential that you end this campaign much sooner if at all possible. Otherwise, the opportunity to invade England this summer will be lost. The upcoming battle for France is the most important campaign you have yet to participate in.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>24</BriefingId>
+<BriefingDesc>Your next mission is to invade England. You must seize London and all other objectives in England before our limited shipping and the storms in the English Channel force us to withdraw our invasion forces.
+High command has given you until September 30th to complete your mission, but we fear that you must succeed sooner or we will see the invasion falter before the British surrender. Operation Sealion is about to begin. Good Luck!</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>25</BriefingId>
+<BriefingDesc>Congratulations on your stunning victory. England has surrendered and the war in the west is now over. Now, the war in the east will begin. While you and your army rested, we conquered Yugoslavia and Greece. You should now be ready to play a key role in Barbarossa, the assault on Russia.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>26</BriefingId>
+<BriefingDesc>Although your initial objectives in Operation Sealion were taken, two major factors brought about a critical supply problem. Severe shipping losses, partially due to the transfer of many old American destroyers to the Royal Navy, as well as several bad storms have proved catastrophic. We were forced to withdraw our forces from England before we could force the British to surrender.
+We are preparing for operations next year against the British in North Africa as well as against Yugoslavia and Greece. Your performance to date has been outstanding and we will be happy to allow you to choose your next operation for yourself and your army.
+Would you prefer to fight next in North Africa or in the Balkans?
+
+&lt;a href=&quot;North_Africa&quot;&gt;North Africa&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;Balkans&quot;&gt;Balkans&lt;/a&gt;
+</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>27</BriefingId>
+<BriefingDesc>Dateline Berlin - November 1, 1940. We are sorry to announce today that Operation Sealion has failed. In the proudest tradition of the German Army the commander of the expeditionary force was killed in action while evacuating his troops to safety.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>28</BriefingId>
+<BriefingDesc>It is time for you to teach the British a lesson in desert warfare. You are to take all of your objectives, including Tobruk and Mersah Matruh, and thus clear the road to Cairo by June 30th. Earlier success could prove decisive, as the British presence on Malta is likely to make our supply situation in North Africa increasingly precarious.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>29</BriefingId>
+<BriefingDesc>Your quick success in North Africa has allowed us to expel the British from Egypt and secure the Suez Canal.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>30</BriefingId>
+<BriefingDesc>Although your objectives were taken, RAF squadrons that arrived on Malta during the last half of June have prevented an advance on Cairo.
+An opportunity has now arisen for you to assume command of the upcoming battle for Kiev in Russia. However, if you decide to stay in North Africa you will have one more chance to finish the British in Egypt. The choice is up to you.
+Would you like to take your army to Russia or remain in North Africa?
+
+&lt;a href=&quot;Kiev&quot;&gt;Russia&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;El_Alamein&quot;&gt;North Africa&lt;/a&gt;
+
+</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>31</BriefingId>
+<BriefingDesc>After your failure in North Africa, Germany was forced to adopt a defensive posture this past year. The American&apos;s Operation Torch may make your life even more difficult.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>32</BriefingId>
+<BriefingDesc>It is time for us to end British domination over the entire Middle East. If we succeed, the British may be weakened sufficiently to allow us to mount an invasion of England. As an alternative, we may be able to influence the war in Russia by opening a new invasion route through the Caucasus. Your many objectives in the Middle East must be taken before major British reinforcements are able to arrive this fall, or all gains may be lost. In any event, we expect you to take your objectives by November 15th at the latest.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>33</BriefingId>
+<BriefingDesc>Your great triumph in the Middle East has been acclaimed by all Germany.
+Strategically, we are in an excellent position on the western front. We now expect to attempt an invasion of England in the summer of 1943 after we have increased the size of our Navy and worn down British air power. We are also planning a major offensive against Russia in the Caucasus early this summer. Our control of the Middle East will allow us to attack the Caucasus from both west and south. We would like you to lead one of these operations.
+Would you like to command the invasion of England in 1943or the attack on the Caucasus in 1942?
+
+&lt;a href=&quot;Sealion_43&quot;&gt;England&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;Caucasus&quot;&gt;Caucasus&lt;/a&gt;
+</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>34</BriefingId>
+<BriefingDesc>Your success to date has been noteworthy. Our control of the Middle East will allow us to attack the Caucasus from both west and south.
+</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>35</BriefingId>
+<BriefingDesc>Your failure in the Middle East has cost us dearly. British counterattacks have forced us to abandon Egypt.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>36</BriefingId>
+<BriefingDesc>After much ebb and flow, the African front has stabilized at Gazala. It is time for you to seize the initiative and drive the British out of Libya and Egypt. Your goal is to seize Cairo and all other objectives by September 30th. However, given the entry of the Americans in the war, it may be necessary to complete the conquest of Egypt earlier to prevent an American invasion of Northwest Africa. Early success may also allow us to attempt an invasion of England.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>37</BriefingId>
+<BriefingDesc>Your great success in Africa has not gone unnoticed by the high command. Strategically, we are now in an excellent position on the western front.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>38</BriefingId>
+<BriefingDesc>Although you were successful in taking Cairo, the Americans are beginning Operation Torch, their invasion of Northwest Africa.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>39</BriefingId>
+<BriefingDesc>We were very disappointed by your inability to take Cairo. This has given the Americans the perfect opportunity to invade Northwest Africa.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>40</BriefingId>
+<BriefingDesc>Thanks in large part to your past success in Africa, you now have an opportunity to deal the Russians a critical blow. If you are able to secure your objectives in the Caucasus soon enough, we will then be ready for the assault on Moscow. You must complete the upcoming campaign by November 26th at the latest. However, in order for us to attack Moscow before bad weather sets in, you must complete your mission several months earlier. The fate of the war in the east is in your hands.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>41</BriefingId>
+<BriefingDesc>Your exceptional victory at Stalingrad has given us an opportunity to destroy Russia once and for all.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>42</BriefingId>
+<BriefingDesc>Although you were able to capture Stalingrad, the Soviet winter offensives have forced us back along the entire front.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>43</BriefingId>
+<BriefingDesc>Your failure in the Caucasus has put us in an extremely difficult position. The Soviet winter offensives have forced us back all along the front.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>44</BriefingId>
+<BriefingDesc>England must be knocked out of the war. Your mission is to take the objectives in southern England and force the British to surrender. We believe the Americans are preparing to send a large part of their Pacific Fleet to reinforce England sometime this summer. We have not been able to keep secret the preparations for the upcoming invasion. It is imperative that you complete your mission by no later than July 14th. However, time is critical and all efforts should be made to secure your objectives before this date.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>45</BriefingId>
+<BriefingDesc>Your victory over England in the summer of 1943 was even more stunning than your earlier victory in Moscow.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>46</BriefingId>
+<BriefingDesc>Congratulations on your truly impressive victory in England. Now that England is out of the war, it is time for you to deal with the Soviets.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>47</BriefingId>
+<BriefingDesc>Although your initial objectives in Operation Sealion were taken, the American counterattack forced our troops to retreat from England before we could effect a British surrender. While you were in England keeping the Western Allies busy, progress has been good on the eastern front.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>48</BriefingId>
+<BriefingDesc>We were very disappointed with your failure to force a British surrender last summer, but we have decided to give you another chance to redeem yourself.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>49</BriefingId>
+<BriefingDesc>You must defend Tunisia so that we can maintain a position in North Africa. If you can hold Tunis and at least five other objectives in Northwest Africa, we could free you and your forces for a possible attack on the Eastern Front. If this is not possible, holding Tunis and at least two other objectives until March 31st will almost certainly cause a delay in future Allied operations.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>50</BriefingId>
+<BriefingDesc>Your success holding back the Allied invasion force was an inspiration to the Wehrmacht. Unfortunately, we were unable to stop their final reoccupation of Africa.
+</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>51</BriefingId>
+<BriefingDesc>Your successful delaying action in Africa was helpful in slowing the Allies. Unfortunately, we were unable to stop their final reoccupation.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>52</BriefingId>
+<BriefingDesc>We were very disappointed that you were unable to stem the Allied advance in Africa. You must secure a victory in your next campaign or your prestige will plummet.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>53</BriefingId>
+<BriefingDesc>We now expect the Americans and British to launch an attack on Sicily and Southern Italy. At a minimum, you must put up a stubborn defense and hold at least two objectives until after October 1st. Ideally, you will hold at least five objectives. Good luck, you will need it.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>54</BriefingId>
+<BriefingDesc>Congratulations on your early success in Italy. Unfortunately, the Allies have been able to fight their way onto the Italian mainland.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>55</BriefingId>
+<BriefingDesc>Congratulations on your excellent defense of the Italian mainland.
+To date, you have done a good job defending Southern Italy. Unfortunately, the Allies have been able to fight their way onto the Italian mainland.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>56</BriefingId>
+<BriefingDesc>To date, you have done a good job defending Southern Italy. Unfortunately, the Allies have been able to fight their way onto the Italian mainland.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>57</BriefingId>
+<BriefingDesc>To date, you have not done a good job defending Southern Italy. We cannot afford another defeat, and neither can you.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>58</BriefingId>
+<BriefingDesc>The Americans have been preparing to launch a new offensive aimed at taking Rome. You must hold Rome and a minimum of two other objectives until at least May 8th. If possible, retake and hold Anzio while keeping the Allies from gaining any of the objectives you currently hold.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>59</BriefingId>
+<BriefingDesc>You have done very well on the Italian front. It is now time for you to counter the upcoming Allied invasion of France.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>60</BriefingId>
+<BriefingDesc>You have done very well on the Italian front.
+It is now time for you to either fight off the Allied invasion of France, or the upcoming Russian summer offensive. Both jobs will be extremely difficult, but you have proven yourself worthy of either task. It is up to you where you will command next.
+Will you fight in France or Russia?
+
+&lt;a href=&quot;D-Day&quot;&gt;France&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;Byelorussia&quot;&gt;Russia&lt;/a&gt;
+
+</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>61</BriefingId>
+<BriefingDesc>We have been pleased with your performance on the Italian front and it is now time for you to counter the upcoming Allied invasion of France.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>62</BriefingId>
+<BriefingDesc>We were very disappointed in your inability to stem the Allied advance in Italy, as it now appears that all of Italy will fall to the Allies this summer. However, due to your previous successes on the Eastern Front, we have decided to allow you to honorably retire from service.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>63</BriefingId>
+<BriefingDesc>Your inability to stem the Allied advance in Italy has cost us dearly, and it now appears that all of Italy will fall to the Allies this summer. We have decided that your services are no longer required.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>64</BriefingId>
+<BriefingDesc>Operation Overlord will be the largest amphibious invasion ever seen by man, and you must stop it. You should strive to pin the Allies in Normandy by holding St. Lo, Caen and Cherbourg until after July 5th when we hope reinforcements will arrive and throw the Allies back into the sea. At a minimum, hold at least two of these three key towns.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>65</BriefingId>
+<BriefingDesc>Your defense of Normandy was outstanding.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>66</BriefingId>
+<BriefingDesc>You put up a good fight in Normandy.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>67</BriefingId>
+<BriefingDesc>We were disappointed with your poor results in Normandy. Your performance must improve or the war will soon be lost.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>68</BriefingId>
+<BriefingDesc>Once again, we ask you to repel an invasion, but this time Southern France is the allied target. Your job is to hold onto the key port of Marseilles and at least two other objectives until after August 28th when we hope to move additional troops to support you. Failing this, you must hold at least two objectives until then.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>69</BriefingId>
+<BriefingDesc>Your recent performance has been superb; unfortunately, the Western Allies&apos; overwhelming quantitative superiority has allowed them to force us back to our borders. Your most recent victory in Southern France combined with your earlier victory in Normandy have proven to us that you have the ability to lead our upcoming counterattack in the Ardennes.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>70</BriefingId>
+<BriefingDesc>Your defense of France was noteworthy; unfortunately, the Allies have broken out of Normandy and are advancing across France.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>71</BriefingId>
+<BriefingDesc>Your defense of Southern France was disappointing, and your weakness has assisted the simultaneous Allied breakout from Normandy and their movement toward the Rhine.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>72</BriefingId>
+<BriefingDesc>Wacht am Rhein is our best chance to seize the initiative and force the Western Allies to make peace with us. It is essential that you capture all of your objectives by December 31st, or the Allies will be able to move overwhelming forces into the Ardennes to stop our offensive. Brussels is your ultimate objective, but capturing and holding all objectives except for Brussels by December 31st will also affect the war favorably.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>73</BriefingId>
+<BriefingDesc>Your spectacular attack through the Allied lines in the Ardennes was all we dared hope for.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>74</BriefingId>
+<BriefingDesc>Your spectacular attack through the Allied lines in the Ardennes was all we dared hope for.
+Combined with your earlier success on the Eastern Front, your victory forced the Allies to accept favorable peace terms. You will be remembered as one of history&apos;s great generals.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>75</BriefingId>
+<BriefingDesc>Your spectacular attack through the Allied lines in the Ardennes was all we dared hope for.
+We have forced the Americans and British to make a separate peace on favorable terms.
+We must now focus our resources on halting the Soviet army, which is currently advancing through Eastern Europe.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>76</BriefingId>
+<BriefingDesc>Your attack was quite an achievement considering the odds against you; unfortunately, it fell short of its ultimate aim of forcing the Allies to sue for peace.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>77</BriefingId>
+<BriefingDesc>We must now focus our resources on halting the Soviet army, which is currently advancing through Eastern Europe.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>78</BriefingId>
+<BriefingDesc>Your attack on the Ardennes was a dismal failure. Not only did it fall far short of its ultimate goal of forcing the Allies to sue for peace, but the resources we wasted will no longer be available for the defense of the homeland.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>79</BriefingId>
+<BriefingDesc>The Allies have now built up their forces and are about to unleash Operation Cobra, their attempt to break out of the Norman hedgerows once and for all. Your mission is to keep the Allies from pushing far into France until after August 18th. To do this, you should hold Paris, Orleans, Nantes and Amiens, but at a minimum you must maintain control of at least three of these cities.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>80</BriefingId>
+<BriefingDesc>Your success last summer in slowing the Allied breakout from Normandy has convinced us that you are the most qualified general to lead our upcoming counterattack in the Ardennes.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>81</BriefingId>
+<BriefingDesc>If you are able to secure your objectives in the Caucasus soon enough, we will then be ready for the assault on Moscow. You must complete the upcoming campaign by November 26th at the latest. However, in order for us to attack Moscow before bad weather sets in, you must complete your mission several months earlier. The fate of the war in the east is in your hands.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>82</BriefingId>
+<BriefingDesc>Your defense of France was disappointing and has allowed the Allies to race across the countryside. Your leadership must improve immediately.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>83</BriefingId>
+<BriefingDesc>Your troops, now located in the Arnhem sector of Holland,  are fighting off a massive Allied attack aimed at securing a path across the many rivers and canals leading to the vital crossing of the Rhine at Arnhem. It is essential that you prevent the Allies from taking Nijmegan while you retake Arnhem, and hold both towns until after September 25th. At a minimum, you must retake Arnhem and hold it until after then. If the Allies secure Arnhem, they will be able to force their way into Germany this year before we can mount a strong counterattack.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>84</BriefingId>
+<BriefingDesc>Congratulations on your outstanding performance in stopping the Allied offensive in Holland.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>85</BriefingId>
+<BriefingDesc>Congratulations on stopping the Allied offensive in Holland.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>86</BriefingId>
+<BriefingDesc>Your performance in Holland was quite disappointing and because of it we have lost any ability to counterattack before our enemies&apos; final assault on Germany.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>87</BriefingId>
+<BriefingDesc>Although we have been able to knock the Russians out of this war, things have not gone as well in the west. The allies have proven to be unstoppable, and are now advancing across German soil.
+You must stop them and push them back along the entire front by taking all objectives. If you can hold onto Berlin and a minimum of 5 other objectives until at least May 8th, we may be able to obtain tolerable armistice terms. This is the final battle; you face either death or glory.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>88</BriefingId>
+<BriefingDesc>Your magnificent defense of Germany has saved us from destruction. The Allies have agreed to an armistice and the war is now over. Your outstanding military leadership will long be remembered.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>89</BriefingId>
+<BriefingDesc>Although you were unable to expel the invaders, your defense of Germany was sufficiently resolute to persuade the allies to grant us an armistice, similar to the unpopular one signed in 1918.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>90</BriefingId>
+<BriefingDesc>Your inability to defend Germany has led to our total destruction. Although you fought well in many battles, we have, in the end, lost everything.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>91</BriefingId>
+<BriefingDesc>Your next mission is to defeat the Yugoslav and Greek armies and force the British forever the European mainland. You should capture your objectives by April 30th so that our upcoming invasion of Russia is not delayed. If you are able to complete your mission earlier, we may honor you with the command of our planned airborne assault on Crete.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>92</BriefingId>
+<BriefingDesc>Your assault on Yugoslavia and Greece was blitzkrieg in its most powerful sense. Due to your spectacular success, we have decided to appoint you to command a very special operation.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>93</BriefingId>
+<BriefingDesc>Your successful assault on Yugoslavia and Greece will allow us to begin an invasion of Russia without fearing an attack on our flank from the Balkans.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>94</BriefingId>
+<BriefingDesc>We were very disappointed with your performance in Yugoslavia and Greece. It is time for you to prove that you are worthy to be a Panzer General.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>95</BriefingId>
+<BriefingDesc>The assault on Crete will be the largest airborne drop ever attempted. It is up to you to lead the airborne attack and capture airfields in Crete so that your main forces can aid the invasion by both sea and air to crush the Allies on the island. You must ultimately secure all of the objectives on Crete by June 1st at the latest. In order to ensure that our forces are optimally prepared for the upcoming invasion of Russia, a much earlier success is desirable.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>96</BriefingId>
+<BriefingDesc>Your victory on Crete will go down in history as a military masterpiece. Your reputation within the army is unequaled. It is for this reason that we have given the key role in the invasion of Russia and the extra resources merited by your prestige.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>97</BriefingId>
+<BriefingDesc>Your victory on Crete adds yet another successful campaign to your resume. Your next assignment will be critical to your career and to the cause of the war.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>98</BriefingId>
+<BriefingDesc>We were very disappointed that you were unable to complete your mission on Crete successfully. We are going to give you another chance to prove yourself to us, but your resources will be limited due to your recently inconsistent performence in battle.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>99</BriefingId>
+<BriefingDesc>The invasion of Russia will be the largest military operation in history. Your army will spearhead Army Group Center&apos;s initial thrust into Russia. You must seize all of your objectives, including the main target of Smolensk, by August 6th. An earlier completion of your mission could allow us to begin the attack on Moscow before the onset of the autumn rain and the winter slows our advance. Rapid and decisive success will be the key to the entire War in the East.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>100</BriefingId>
+<BriefingDesc>Your smashing success in overrunning the Russian frontier armies and taking Smolensk proves that yet again that you are the premier Panzer General in the world.
+We have reached a critical juncture in our war in Russia. Many generals believe that we should divert your forces to assist Army Group South in its drive to capture Kiev. There does appear to be an opportunity to trap and destroy a large part of the Soviet Army in this area. Other generals believe we should ignore the south and instead send your forces driving directly toward Moscow as soon as supplies can be brought forward, in order to reach there before winter. They believe a move toward Kiev will delay the drive on Moscow and may cause us to fail at the city gates. It appears that high command is leaning toward a drive on Kiev. Your opinion on this matter could sway their decision toward Moscow, but it would surely cost you some of your prestige to voice your opinion regarding such a key decision.
+Would you like to spend 1500 of your prestige points to convince high command to allow you to avoid an attack on Kiev and instead continue your drive to Moscow?
+
+&lt;a -prestige=&quot;1500&quot; href=&quot;Early_Moscow&quot;&gt;Yes&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;Kiev&quot;&gt;No&lt;/a&gt;
+</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>101</BriefingId>
+<BriefingDesc>We were pleased with your initial success in driving deep into Russia.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>102</BriefingId>
+<BriefingDesc>Your total inability to overcome Soviet resistance has stalled the war in the east. All of our plans have been made useless, and it is now impossible for us to win this war quickly if at all.
+Your services are no longer needed.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>103</BriefingId>
+<BriefingDesc>For weeks our troops have been stopped by Russian forces near Kiev. It is time for you to encircle and destroy their positions. You are hereby ordered to strike south toward Kiev and Lokhvitsa. Army Group South units, temporarily under your command, are to drive north and meet your forces, thus encircling the Russian armies. All of the objectives in your sector must be taken by September 19th in order for us to redeploy your troops in time for an attack on Moscow this year. An earlier completion of this battle can only enhance your prestige, and give you a better chance to obtain the resources you will need to capture Moscow.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>104</BriefingId>
+<BriefingDesc>Congratulations on your stunning success in the Ukraine. Many Soviet troops have been destroyed or have surrendered.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>105</BriefingId>
+<BriefingDesc>Your successful conclusion of the battle for Kiev has been noted.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>106</BriefingId>
+<BriefingDesc>Your inability to take the objectives in the Kiev area forced us to suspend our planned offensive against Moscow this year. Your performance was very disappointing, and it is imperative that your leadership improves substantially in the upcoming campaign.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>107</BriefingId>
+<BriefingDesc>The time has come for the decisive battle of 1941. The Soviets have marshalled their troops to defend Moscow the economic and political key to Russia. It is time for you to hurl your forces at Moscow. You must break through their defenses and take Moscow before the combination of winter weather and Siberian reinforcements can steal the initiative. If Moscow can be taken and held this winter, the Soviets will undoubtedly surrender.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>108</BriefingId>
+<BriefingDesc>Congratulations on your crushing victory over the Soviets, a triumph even more impressive than your earlier victory against England. Russia has surrendered! Now, America stands alone.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>109</BriefingId>
+<BriefingDesc>Congratulations on your crushing victory over the Soviets. Russia has surrendered! Because of your prestige, you have been selected to lead our upcoming invasion of England.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>110</BriefingId>
+<BriefingDesc>Your successful capture of Moscow turned out to be short-lived. Soviet reinforcements from Siberia were able to push back our weary troops. Fierce Soviet counterattacks have weakened our once invincible-armies.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>111</BriefingId>
+<BriefingDesc>Your inability to capture your objectives in and around Moscow has led to disaster. The Soviet armies, reinforced by troops from Siberia, have wreaked havoc on our overextended and once-invincible armies. Fierce Soviet counterattacks this winter have pushed back our weary troops all along the front.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>112</BriefingId>
+<BriefingDesc>Sevastopol, home of the Soviet Black Sea Fleet, must be taken so that we can begin our upcoming campaign in the Ukraine and the Caucasus without a major enemy fortress threatening our right flank. Sevastopol has been under siege and has been pounded by air and artillery for 5 straight days, but you should expect the entrenchments and forts you attack to be the toughest you have ever faced in the war. You must take Sevastopol and the surrounding objectives by no later than June 23rd or our offensive in the south will be compromised. An earlier completion of your mission will only make it easier to prevail over the Soviets later this year.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>113</BriefingId>
+<BriefingDesc>Your storming of Sevastopol will be recognized as one of history&apos;s greatest assaults against a fortress.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>114</BriefingId>
+<BriefingDesc>Your capture of Sevastopol on schedule deserves praise for a job well done.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>115</BriefingId>
+<BriefingDesc>We were very disappointed with your inability to capture the forts in and around Sevastopol. It now appears that our southern offensive will have to be postponed indefinitely.
+Your services are no longer needed.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>116</BriefingId>
+<BriefingDesc>Although your initial objectives in Operation Sealion were taken, the American counterattack forced our troops to retreat from England before we could effect a British surrender.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>117</BriefingId>
+<BriefingDesc>We are ready for you to lead our troops into Moscow and force the Soviet&apos;s unconditional surrender. It is essential that you take your objectives by December 31st at the latest. You should strive to take your objectives quickly in order to ensure that winter weather doesn&apos;t give the Russians an opportunity to counterattack before we have consolidated our gains.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>118</BriefingId>
+<BriefingDesc>Congratulations on your crushing victory over the Soviets, a feat even more impressive than your earlier triumph in England. Russia has surrendered! America stands alone.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>119</BriefingId>
+<BriefingDesc>Congratulations on your crushing victory over the Soviets. Russia has surrendered!</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>120</BriefingId>
+<BriefingDesc>Unfortunately, your capture of Moscow turned out to be short-lived, as the Soviet counterattack in January forced us to retire from there.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>121</BriefingId>
+<BriefingDesc>We were very disappointed by your inability to capture your objectives in and around Moscow. A great opportunity has been lost and you must prove to us that you remain the great commander you once were.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>122</BriefingId>
+<BriefingDesc>Due to your previous success on the western front, we have decided to allow you to honorably retire.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>123</BriefingId>
+<BriefingDesc>Your failure to stem the Russian tide threatens us with the possibility of total extinction.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>124</BriefingId>
+<BriefingDesc>We have moved your troops into Hungary and it is time for you to lead Operation Waldteufel, the attack to retake Budapest. You must take all of your objectives by March 25th at the latest. However, an earlier completion of your mission is necessary if we are to continue the counteroffensive and drive the Soviets back to Russia.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>125</BriefingId>
+<BriefingDesc>Although we have been able to knock the Americans and British out of this war, the war in the east has not gone well. The Soviets have proven to be unstoppable, and are now advancing across German soil.
+You must stop them and push them back along the entire front by taking all objectives. If you can hold onto Berlin and a minimum of 5 other objectives until at least May 8th, we may be able to obtain tolerable armistice terms. This is the final battle; you face either death or glory.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>126</BriefingId>
+<BriefingDesc>It is imperative that we regain the initiative by launching a counterattack to retake Kharkov, a city recently taken by advancing Soviet armies. If you are able to retake Kharkov and all other objectives by March 14th, we should be in a position to launch a major offensive aimed at Kursk in the summer. An early victory at Kharkov will make it easier for us to overwhelm the Soviets when the weather turns warm again.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>127</BriefingId>
+<BriefingDesc>Your victory at Kharkov was so quick and decisive that the Soviet forces became hopelessly disorganized. We have been able to keep them on the run ever since.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>128</BriefingId>
+<BriefingDesc>Your victory at Kharkov has allowed us to regain the initiative. We must continue to press our attacks against the Soviets.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>129</BriefingId>
+<BriefingDesc>Your leadership proved weak and uninspiring at Kharkov, and we were unable to regain the initiative. Another year of senseless fighting in Russia has come and gone.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>130</BriefingId>
+<BriefingDesc>The time for Operation Citadel has come. You are to attack and destroy the Soviet forces in the Kursk salient. The seizure of several key cities behind the front lines (including Kursk) is the key to this battle. You must capture all of your objectives by July 24th, to allow time for a new assault on Moscow this year. We must warn you that we expect massive Russian counterattacks in your sector to begin within ten days. If you are unable to take all of your objectives, you must at a minimum keep the Russians from recapturing all of the objectives that you currently hold.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>131</BriefingId>
+<BriefingDesc>Your victory at Kursk was so quick and decisive that the Soviet forces became hopelessly disorganized. We have been able to keep them on the run ever since.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>132</BriefingId>
+<BriefingDesc>Although you were unable to take all of your objectives, you did successfully fight off the Russian counterattack. Unfortunately we lost the initiative on the eastern front, and another year of senseless fighting in Russia has come and gone.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>133</BriefingId>
+<BriefingDesc>Your leadership proved weak and uninspiring at Kursk, and we were unable to regain the initiative. Another year of senseless fighting in Russia has come and gone.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>134</BriefingId>
+<BriefingDesc>Our armies have pushed to the gates of Moscow and it is time for you to take the Kremlin and force the Soviets to surrender. It is essential that you take your objectives by December 31st at the latest. To ensure that winter weather doesn&apos;t give the Russians an opportunity to counterattack before we have consolidated our gains, you should take your objectives much earlier.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>135</BriefingId>
+<BriefingDesc>It is now time for you to counter the upcoming Allied invasion of France.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>136</BriefingId>
+<BriefingDesc>Although you succeeded in taking your objectives, the Russians continue to bounce back with amazing resiliency. Their counterattack has destroyed our last hope of forcing their unconditional surrender.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>137</BriefingId>
+<BriefingDesc>Your ignominious defeat at the hands of the Russians has destroyed our last hope of forcing their unconditional surrender.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>138</BriefingId>
+<BriefingDesc>The Russians are about to unleash a massive attack aimed at the center of our line. It is up to you to fight against overwhelming odds and keep the Russians from taking Warsaw by August 29th. If possible, hold Warsaw and at least two other objectives until after then and we may yet have an opportunity to reverse the tide of this war.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>139</BriefingId>
+<BriefingDesc>Your outstanding victory near Warsaw defending against the Soviet juggernaut has helped us keep the Soviets at bay for another year.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>140</BriefingId>
+<BriefingDesc>Your outstanding victory defending against the Soviet juggernaut has allowed us to shift forces to the west in preparation for a massive counterstroke aimed at the Americans. Your success has convinced us that you are the one to lead our upcoming attack in the Ardennes.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>141</BriefingId>
+<BriefingDesc>Your solid performance near Warsaw against the Soviet juggernaut has helped us keep the Russians at bay for another year.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>142</BriefingId>
+<BriefingDesc>Unfortunately, their forces continue to push us back and threaten our very existence. An opportunity now exists for us to repel them and regain the initiative. </BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>143</BriefingId>
+<BriefingDesc>Your great victory is reminiscent of your early blitzkriegs through Europe. Combined with your earlier success on the western front, your victory forced the Soviets to accept favorable peace terms. You will be remembered as one of history&apos;s great generals.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>144</BriefingId>
+<BriefingDesc>Your great victory is reminiscent of your early blitzkriegs through Europe. We have forced the Soviets to make a separate peace with favorable terms. We must now focus our resources on fighting off the American and British armies.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>145</BriefingId>
+<BriefingDesc>Your victory has helped delay the Russian advance, but it was insufficient to keep them from continuing their attacks.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>146</BriefingId>
+<BriefingDesc>Your defeat has allowed the Russians to continue their advance.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>147</BriefingId>
+<BriefingDesc>You must stop them and push them back along the entire front by taking all objectives. If you can hold onto Berlin and a minimum of 5 other objectives until at least May 8th, we may be able to obtain tolerable armistice terms. This is the final battle; you face either death or glory.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>148</BriefingId>
+<BriefingDesc>Your magnificent defense of Germany has saved us from total destruction. The Soviets have agreed to a reasonable armistice and the war is over. Your outstanding military leadership will long be remembered in the coming years of peace.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>149</BriefingId>
+<BriefingDesc>Your magnificent defense of Germany has saved us from destruction. The Soviets, Americans and British have granted us an armistice similar to the unpopular one signed in 1918.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>150</BriefingId>
+<BriefingDesc>Although you were unable to throw out the invaders, your defense of Germany was sufficient to obtain an armistice. Unfortunately, the terms of the armistice are even harsher than those of the unpopular one signed in 1918.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>151</BriefingId>
+<BriefingDesc>Europe is now united under German leadership. You have achieved the success that Napoleon only dreamed of. Now it is time for you to end the war. The Americans have long thought themselves secure because of the vastness of the oceans washing their shores. But, your initial landings in Delaware and Maryland have shaken popular confidence. They have mustered their forces to defend their capital and you must crush the defenders and seize all your objectives in and around Washington, D.C. by August 15th at the latest. Confidentially, we have reports that the US is constructing a super weapon that could totally reverse the course of this war. This weapon may be available as early as mid-July so it is imperative that you force an American surrender as early as possible.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>152</BriefingId>
+<BriefingDesc>Your early capture of Washington has forced the surrender of the United States before they could successfully test an atomic bomb. North America and Europe have been successfully united under common leadership and all the other nations of the world are courting German favor. The world is at peace.Your brilliant leadership throughout this war ranks you among the greatest generals that have ever lived, and you will be remembered as the greatest Panzer General in history.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>153</BriefingId>
+<BriefingDesc>Your capture of Washington has allowed us to negotiate a favorable peace treaty with the Americans. But, their ability to create and test an atomic bomb has kept us from uniting North America and Europe. Your brilliant leadership throughout this war will long be remembered in the coming years of peace.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>154</BriefingId>
+<BriefingDesc>Dateline Berlin - August 15, 1945. The war is over. A peace agreement between the United States and Germany is signed. Our armed forces failure to capture Washington, D.C., and the use by the United States on August 6th of an atomic bomb are the reasons cited for the peace accord. We are pleased peace has come but are sorry to report that the commander of the invasion forces is confirmed killed alongside his troops in the atomic explosion. He will long be remembered as one of history&apos;s greatest military minds in the hearts of our people for his contribution to peace.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>155</BriefingId>
+<BriefingDesc>Both the Soviets and the Western Allies have proven to be unstoppable, and are now advancing across German soil.
+You must keep them out of central Germany by holding Berlin and at least five other objectives until after May 8th. Failing in this, you must at least hold Berlin until after May 8th. This is the final battle and you must prevail.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>156</BriefingId>
+<BriefingDesc>You must take your objectives by no later than November 16th, but in order for us to ensure that we can hold Moscow in the face of a determined counterattack, you should strive to take Moscow several weeks earlier. This will no doubt be our best chance to win the War in the East.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>157</BriefingId>
+<BriefingDesc> </BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>158</BriefingId>
+<BriefingDesc> </BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>159</BriefingId>
+<BriefingDesc>Gibraltar has been taken and the Italian Fleet has sailed toward England. Your mission is to take London and the Industrial Heart of England before our limited shipping and storms in the English Channel force us to withdraw our invasion.
+High command has given you until September 30th to complete your mission, but we fear that you must succeed sooner or we will see the invasion falter before the British surrender. Operation Sealion is about to begin. Good Luck!</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>160</BriefingId>
+<BriefingDesc>High command has given you until September 30th to complete your mission, but we fear that you must succeed sooner or we will see the invasion falter before the British surrender. Operation Sealion is about to begin. Good Luck!</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>161</BriefingId>
+<BriefingDesc>Congratulations on your outstanding victory in France. My humiliation in 1918 is avenged.
+England lies open to invasion, ensuring total victory on the western front. The invasion is planned to occur on September 1st, but a debate at the highest level of government is in progress. Some believe that we should invade Spain in order to take Gibraltar and thus free the Italian Navy to assist us against the powerful British Navy. Others believe this to be unnecessary and they are winning the argument. Your opinion could influence the outcome of this key decision. The assistance of the Italian Fleet could be the difference in the upcoming invasion, but it may come at the cost of some of your prestige.
+Do you want to spend 1000 prestige to secure Gibralter and the help of the Italian Navy?
+
+&lt;a -prestige=&quot;1000&quot; href=&quot;Sealion_Plus&quot;&gt;Yes&lt;/a&gt;&lt;br/&gt;
+&lt;a -prestige=&quot;0&quot; href=&quot;Sealion_40&quot;&gt;No&lt;/a&gt;
+
+</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>162</BriefingId>
+<BriefingDesc>We are preparing for operations next year against the British in North Africa as well as against Yugoslavia and Greece. Your performance to date has been outstanding and we will be happy to allow you to choose your next operation for yourself and your army.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>163</BriefingId>
+<BriefingDesc>An opportunity has now arisen for you to assume command of the upcoming battle for Kiev in Russia. However, if you decide to stay in North Africa you will have one more chance to finish the British in Egypt. The choice is up to you.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>164</BriefingId>
+<BriefingDesc>Strategically, we are in an excellent position on the western front. We now expect to attempt an invasion of England in the summer of 1943 after we have increased the size of our Navy and worn down British air power. We are also planning a major offensive against Russia in the Caucasus early this summer. Our control of the Middle East will allow us to attack the Caucasus from both west and south. We would like you to lead one of these operations.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>165</BriefingId>
+<BriefingDesc>Your success holding back the Allied invasion force was an inspiration to the Wehrmacht. Unfortunately, we were unable to stop their final reoccupation of Africa.
+While you were defending Africa, we were able to marshal considerable forces in preparation for a major offensive in Russia, and we are considering you to lead the attack. The Russians are well dug in and the battle will be one of the most difficult of the war. At the same time, we expect the Americans and British to launch an attack on Sicily and Southern Italy and your talents could be put to good use repelling the invaders. The choice is yours.
+Do you want to fight next in Russia or in Italy?
+
+&lt;a href=&quot;Kursk&quot;&gt;Russia&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;Husky&quot;&gt;Italy&lt;/a&gt;
+
+</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>166</BriefingId>
+<BriefingDesc>It is now time for you to either fight off the Allied invasion of France, or the upcoming Russian summer offensive. Both jobs will be extremely difficult, but you have proven yourself worthy of either task. It is up to you where you will command next.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>167</BriefingId>
+<BriefingDesc>We have reached a critical juncture in our war in Russia. Many generals believe that we should divert your forces to assist Army Group South in its drive to capture Kiev. There does appear to be an opportunity to trap and destroy a large part of the Soviet Army in this area. Other generals believe we should ignore the south and instead send your forces driving directly toward Moscow as soon as supplies can be brought forward, in order to reach there before winter. They believe a move toward Kiev will delay the drive on Moscow and may cause us to fail at the city gates. It appears that high command is leaning toward a drive on Kiev. Your opinion on this matter could sway their decision toward Moscow, but it would surely cost you some of your prestige to voice your opinion regarding such a key decision.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>168</BriefingId>
+<BriefingDesc>Your successful capture of Moscow turned out to be short-lived. Soviet reinforcements from Siberia were able to push back our weary troops. Fierce Soviet counterattacks have weakened our once invincible-armies.
+It is time for us to recapture the initiative on both east and west fronts. On the eastern front, we are preparing to assault Sevastopol in the Crimea in order to free our forces for a drive toward Stalingrad and the oilfields of the Caucasus. On the western front, we will soon begin an assault intended to break the British army in North Africa and capture Cairo. You have performed well and we give you the opportunity to lead either of these critical operations.
+Would you like to lead the assault on Sevastopol or the offensive in North Africa?
+
+&lt;a href=&quot;Sevastopol&quot;&gt;Sevastopol&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;El_Alamein&quot;&gt;North Africa&lt;/a&gt;
+
+</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>169</BriefingId>
+<BriefingDesc>Although you were able to capture Stalingrad, the Soviet winter offensives have forced us back along the entire front.
+Our disappointment in delivering a knockout blow to Russia in 1942 has been increased by the Western Allies gradually forcing us out of North Africa. We intend to begin an offensive in the area which if successful may ultimately lead us to the possibility of defeating the Russians once and for all. However, we expect the Allies to invade Sicily and Italy as soon as they force us out of Africa, and a successful defense of the continent may help us free the necessary forces to defeat Russia later this year. Your skills can only be used in one of these two areas. We leave it to you to decide where you wish to lead your army in battle.
+Would you like to fight next in Russia or in Italy?
+
+&lt;a href=&quot;Kursk&quot;&gt;Russia&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;Husky&quot;&gt;Italy&lt;/a&gt;
+</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>170</BriefingId>
+<BriefingDesc>Although you were unable to take all of your objectives, you did successfully fight off the Russian counterattack. Unfortunately we lost the initiative on the eastern front, and another year of senseless fighting in Russia has come and gone.
+Our disappointment in not delivering a knockout blow to Russia in 1943 has been equaled by the failure of our forces to keep the Western Allies from gaining a toehold on the European mainland in southern Italy. We need a strong general like you to go to Italy and prevent the Western Allies from capturing Rome. At the same time, we need your skills here in Russia to fight off the inevitable Soviet offensives.
+Would you like to remain in Russia or move your forces to Italy?
+
+&lt;a href=&quot;Byelorussia&quot;&gt;Russia&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;Anzio&quot;&gt;Italy&lt;/a&gt;
+
+</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>171</BriefingId>
+<BriefingDesc>Although you succeeded in taking your objectives, the Russians continue to bounce back with amazing resiliency. Their counterattack has destroyed our last hope of forcing their unconditional surrender.
+Our disappointment in not delivering a knockout blow to Russia in 1943 has been equaled by the failure of our forces to keep the Western Allies from gaining a toehold on the European mainland in southern Italy. We need a strong general like you to go to the western front and counter the expected Allied invasion of France. At the same time, we need your skills here in Russia to fight off the inevitable Soviet offensives.
+Would you like to remain in Russia or move your forces to France
+
+&lt;a href=&quot;Byelorussia&quot;&gt;Russia&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;D-Day&quot;&gt;France&lt;/a&gt;
+
+</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>172</BriefingId>
+<BriefingDesc>Your mission is to break the French &apos;will to resist&apos; by taking Paris and all other objectives by June 30th.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>173</BriefingId>
+<BriefingDesc>May peace remain for many years to come.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>174</BriefingId>
+<BriefingDesc>You must take your objectives by no later than December 4th. In order for us to ensure that we can hold Moscow in the face of a determined counterattack you should strive to take Moscow several weeks earlier. This is our best chance to win the War in the East.</BriefingDesc>
+</Briefing>
+<Briefing>
+<BriefingId>175</BriefingId>
+<BriefingDesc> </BriefingDesc>
+</Briefing>
+</dataroot>

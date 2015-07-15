@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="fa9ed05a-6298-4c51-9a29-a027fde92b3b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://www.tenfingersfree.com/panzer/PanzerService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PanzerService.disco" MetadataType="Disco" ID="4707ef5b-9616-4a94-b783-fee42714b276" SourceId="1" SourceUrl="http://www.tenfingersfree.com/panzer/PanzerService.svc?disco" />
+    <MetadataFile FileName="PanzerService.xsd" MetadataType="Schema" ID="362ecb7d-ed40-474d-b343-d13aab704070" SourceId="1" SourceUrl="http://www.tenfingersfree.com/panzer/PanzerService.svc?xsd=xsd1" />
+    <MetadataFile FileName="PanzerService1.xsd" MetadataType="Schema" ID="12d87e33-3e57-4502-b69d-e7727be44345" SourceId="1" SourceUrl="http://www.tenfingersfree.com/panzer/PanzerService.svc?xsd=xsd0" />
+    <MetadataFile FileName="PanzerService.wsdl" MetadataType="Wsdl" ID="3fd8916c-39d5-4aec-bb7a-591b3ce3966d" SourceId="1" SourceUrl="http://www.tenfingersfree.com/panzer/PanzerService.svc?wsdl" />
+    <MetadataFile FileName="PanzerService2.xsd" MetadataType="Schema" ID="580a0910-f09a-4c4c-a614-45cae8a6e309" SourceId="1" SourceUrl="http://www.tenfingersfree.com/panzer/PanzerService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

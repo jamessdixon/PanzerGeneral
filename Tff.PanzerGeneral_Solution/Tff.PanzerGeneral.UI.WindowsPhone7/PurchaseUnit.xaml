@@ -1,0 +1,120 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="Tff.Panzer.PurchaseUnit"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True">
+
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+                
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="125"/>            
+        </Grid.RowDefinitions>
+
+        <Button Name="landButton"
+                Content="Land" 
+                Grid.Row="0"
+                Height="100"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Bottom" 
+                Width="150" Click="LandButton_Click"/>
+        <Button Name="airButton"
+                Content="Air" 
+                Grid.Row="0"
+                Height="100" 
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom" 
+                Width="150" Click="AirButton_Click"/>
+        <Button Name="transportButton"
+                Content="Transport" 
+                Grid.Row="0"
+                Height="100" 
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom" 
+                Width="150" Click="TransportButton_Click"/>
+
+        <ListBox x:Name="equipmentClassListBox"
+                 Grid.Row="1"
+                 SelectionChanged="EquipmentClassListBox_SelectionChanged" />
+        <ListBox x:Name="combatEquipmentListBox"                 
+                 Grid.Row="3"
+                 SelectionChanged="CombatEquipmentListBox_SelectionChanged" />
+        <Canvas x:Name="combatUnitImage"
+                Grid.Row="4"
+                Height="150"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Width="200"/>
+        <ScrollViewer x:Name="combatUnitScrollViewer"
+                Grid.Row="5">
+            <StackPanel x:Name="combatUnitStackPanel"
+               VerticalAlignment="Top"/>
+        </ScrollViewer>
+        
+        
+
+        <ListBox x:Name="transportEquipmentListBox"
+                 Grid.Row="1"
+                 HorizontalAlignment="Right"
+                 SelectionChanged="TransportEquipmentListBox_SelectionChanged" />
+
+        <Canvas x:Name="transportUnitImage"
+               Grid.Row="4" 
+               Height="150"
+                HorizontalAlignment="Right"
+               VerticalAlignment="Top"
+               Width="200"/>
+
+        <ScrollViewer x:Name="transportUnitScrollViewer"
+                Grid.Row="5">
+            <StackPanel x:Name="transportUnitStackPanel"
+                        HorizontalAlignment="Right"
+               VerticalAlignment="Top"/>
+        </ScrollViewer>
+
+
+        <Button Name="purchaseCombatUnitButton"
+                Content="Purchase" 
+                Grid.Row="10"
+                Height="100" 
+                HorizontalAlignment="Left"
+                VerticalAlignment="Bottom" 
+                Width="150"
+                Visibility="Collapsed"
+                Click="PurchaseCombatUnitButton_Click"/>
+
+        <Button Name="purchaseTransportUnitButton"
+                Content="Purchase" 
+                Grid.Row="10"
+                Height="100" 
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom" 
+                Width="150"
+                Visibility="Collapsed"
+                Click="PurchaseTransportUnitButton_Click"/>
+    </Grid>
+    
+
+
+</phone:PhoneApplicationPage>

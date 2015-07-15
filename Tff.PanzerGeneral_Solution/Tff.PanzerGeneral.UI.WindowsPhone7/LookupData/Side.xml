@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot>
+<Side>
+<SideId>0</SideId>
+<SideDescription>Axis</SideDescription>
+</Side>
+<Side>
+<SideId>1</SideId>
+<SideDescription>Allies</SideDescription>
+</Side>
+<Side>
+<SideId>2</SideId>
+<SideDescription>Neutral</SideDescription>
+</Side>
+</dataroot>

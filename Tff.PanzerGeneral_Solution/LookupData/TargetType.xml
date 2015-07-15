@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot>
+<TargetType>
+<TargetTypeId>0</TargetTypeId>
+<TargetTypeDescription>Soft Ground</TargetTypeDescription>
+</TargetType>
+<TargetType>
+<TargetTypeId>1</TargetTypeId>
+<TargetTypeDescription>Hard Ground</TargetTypeDescription>
+</TargetType>
+<TargetType>
+<TargetTypeId>2</TargetTypeId>
+<TargetTypeDescription>Air</TargetTypeDescription>
+</TargetType>
+<TargetType>
+<TargetTypeId>3</TargetTypeId>
+<TargetTypeDescription>Sea</TargetTypeDescription>
+</TargetType>
+</dataroot>

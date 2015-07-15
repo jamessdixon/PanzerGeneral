@@ -1,0 +1,304 @@
+﻿<UserControl 
+    x:Class="Tff.Panzer.Controls.TestHex"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="clr-namespace:Tff.Panzer.Controls"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    mc:Ignorable="d"
+    DataContext="pm:Tile"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="100" d:DesignWidth="120">
+
+    <Canvas x:Name="MainCanvas">
+        <Canvas x:Name="ColorCanvas" Opacity="0" Canvas.ZIndex="1">
+            <Path x:Name="ColorPath"
+                IsHitTestVisible="False"
+                Height="100"
+                Width="120"  
+                d:LayoutOverrides="None"
+                d:LastTangent="0,0" 
+                Stroke="Gray"
+                StrokeThickness="1"  
+                HorizontalAlignment="Stretch" 
+                VerticalAlignment="Stretch"       
+                Margin="0" 
+                Stretch="Fill"
+                Data="M0,8.660254 L5,17.320508 15,17.320508 20,8.660254 15,0 5,0 0,8.660254 z"
+                Canvas.Top="0"
+                Canvas.Left="0">
+                <Path.Fill>
+                    <SolidColorBrush x:Name="ColorBrush" Color="Red">
+                        <SolidColorBrush.Transform>
+                            <TransformGroup>
+                                <ScaleTransform x:Name="ColorScaleTransform"
+                                                ScaleX="2" 
+                                                ScaleY="2" />
+                        </TransformGroup>
+                        </SolidColorBrush.Transform>
+                    </SolidColorBrush>
+                </Path.Fill>
+            </Path>
+
+        </Canvas>        
+        <Canvas x:Name="TerrainCanvas">
+            <Path x:Name="TerrainPath"
+                IsHitTestVisible="True"
+                Height="100"
+                Width="120"  
+                d:LayoutOverrides="None"
+                d:LastTangent="0,0" 
+                Stroke="Red"
+                StrokeThickness="10"  
+                HorizontalAlignment="Stretch" 
+                VerticalAlignment="Stretch"       
+                Margin="0" 
+                Stretch="Fill"
+                Data="M0,8.660254 L5,17.320508 15,17.320508 20,8.660254 15,0 5,0 0,8.660254 z"
+                Canvas.Top="0"
+                Canvas.Left="0">
+                <Path.Fill>
+                    <ImageBrush x:Name="TerrainImageBrush"
+                            Stretch="None" 
+                            AlignmentX="Left" 
+                            AlignmentY="Top" 
+                            ImageSource="/Tff.Panzer;component/Images/tacmap_dry.jpg">
+                        <ImageBrush.Transform>
+                            <TransformGroup>
+                                <TranslateTransform x:Name="TerrainTranslateTransform"
+                                                    X="-60" 
+                                                    Y="-100"/>
+                                <ScaleTransform x:Name="TerrainScaleTransform"
+                                                ScaleX="2" 
+                                                ScaleY="2" />
+                            </TransformGroup>
+                        </ImageBrush.Transform>
+                    </ImageBrush>
+                </Path.Fill>
+            </Path>
+        </Canvas>
+        <Canvas x:Name="UnitCanvas">
+            <Path x:Name="UnitPath" 
+                  IsHitTestVisible="False" 
+                  Height="100" 
+                  Width="120" 
+                  d:LayoutOverrides="None" 
+                  d:LastTangent="0,0" 
+                  Stroke="Transparent" 
+                  Stretch="Fill" 
+                  Data="M0,8.660254 L5,17.320508 15,17.320508 20,8.660254 15,0 5,0 0,8.660254 z" 
+                Canvas.Top="0"
+                Canvas.Left="0">
+                <Path.Fill>
+                    <ImageBrush x:Name="UnitImageBrush" 
+                            Stretch="None" AlignmentX="Left" 
+                                AlignmentY="Top" 
+                                ImageSource="/Tff.Panzer;component/Images/tacicons.png">
+                        <ImageBrush.Transform>
+                            <TransformGroup>
+                                <TranslateTransform x:Name="UnitTranslateTransform"
+                                        X="-60" 
+                                        Y="-10"/>
+                                <ScaleTransform  x:Name="UnitScaleTransform"
+                                        ScaleX="2" 
+                                        ScaleY="2" />
+                            </TransformGroup>
+                        </ImageBrush.Transform>
+                    </ImageBrush>
+                </Path.Fill>
+            </Path>
+        </Canvas>
+        <Canvas x:Name="StackedUnitCanvas">
+            <Path x:Name="StackedUnitPath" 
+                  IsHitTestVisible="False" 
+                  Height="100" 
+                  Width="120" 
+                  d:LayoutOverrides="None" 
+                  d:LastTangent="0,0" 
+                  Stroke="Transparent" 
+                  Stretch="Fill" 
+                  Data="M0,8.660254 L5,17.320508 15,17.320508 20,8.660254 15,0 5,0 0,8.660254 z" 
+                Canvas.Top="0"
+                Canvas.Left="0">
+                <Path.Fill>
+                    <ImageBrush x:Name="StackedUnitImageBrush" 
+                            Stretch="None" AlignmentX="Left" 
+                                AlignmentY="Top" 
+                                ImageSource="/Tff.Panzer;component/Images/stackicn.png">
+                        <ImageBrush.Transform>
+                            <TransformGroup>
+                                <TranslateTransform x:Name="StackedUnitTranslateTransform"
+                                        X="-60" 
+                                        Y="-50"/>
+                                <ScaleTransform  x:Name="StackedUnitScaleTransform"
+                                        ScaleX="2" 
+                                        ScaleY="2" />
+                            </TransformGroup>
+                        </ImageBrush.Transform>
+                    </ImageBrush>
+                </Path.Fill>
+            </Path>
+        </Canvas>
+        <Canvas x:Name="CountryCanvas" Canvas.ZIndex="2">
+            <Path x:Name="CountryPath" 
+                  IsHitTestVisible="False" 
+                  Height="100" 
+                  Width="120" 
+                  d:LayoutOverrides="None" 
+                  d:LastTangent="0,0" 
+                  Stroke="Transparent" 
+                  Stretch="Fill" 
+                  Data="M0,8.660254 L5,17.320508 15,17.320508 20,8.660254 15,0 5,0 0,8.660254 z" 
+                  Canvas.Left="0" 
+                  Canvas.Top="0">
+                <Path.Fill>
+                    <ImageBrush x:Name="CountryImageBrush" 
+                            Stretch="None" 
+                                AlignmentX="Left" 
+                                AlignmentY="Top" 
+                                ImageSource="/Tff.Panzer;component/Images/flags.png">
+                        <ImageBrush.Transform>
+                            <TransformGroup>
+                                <TranslateTransform x:Name="CountryTranslateTransform"
+                                                    X="-600" 
+                                                    Y="0"/>
+                                <ScaleTransform x:Name="CountryScaleTransform"
+                                        ScaleX="2" 
+                                        ScaleY="2" />
+                            </TransformGroup>
+                        </ImageBrush.Transform>
+                    </ImageBrush>
+                </Path.Fill>
+            </Path>
+        </Canvas>
+        <Canvas x:Name="StrengthCanvas" Canvas.ZIndex="3">
+            <Path x:Name="StrengthPath" 
+                  IsHitTestVisible="False" 
+                  Height="100" 
+                  Width="120" 
+                  d:LayoutOverrides="None" 
+                  d:LastTangent="0,0" 
+                  Stroke="Transparent" 
+                  Stretch="Fill" 
+                  Data="M0,8.660254 L5,17.320508 15,17.320508 20,8.660254 15,0 5,0 0,8.660254 z" 
+                  Canvas.Left="0" 
+                  Canvas.Top="0">
+                <Path.Fill>
+                    <ImageBrush x:Name="StrengthImageBrush"  
+                            Stretch="None" 
+                                AlignmentX="Left" 
+                                AlignmentY="Top" 
+                                ImageSource="/Tff.Panzer;component/Images/strength.png">
+                        <ImageBrush.Transform>
+                            <TransformGroup>
+                                <TranslateTransform x:Name="StrengthTranslateTransform"
+                                                    X="-480" 
+                                                    Y="0"/>
+                                <ScaleTransform x:Name="StrengthScaleTransform"
+                                        ScaleX="2" 
+                                        ScaleY="2" />
+                            </TransformGroup>
+                        </ImageBrush.Transform>
+                    </ImageBrush>
+                </Path.Fill>
+            </Path>
+        </Canvas>
+        <Canvas x:Name="ExplodeCanvas" Opacity="0" Canvas.ZIndex="0">
+            <Canvas.Resources>
+                <Storyboard x:Name="ExplodeStoryboard">
+                    <ObjectAnimationUsingKeyFrames 
+                        Storyboard.TargetName="ExplodeTranslateTransform" 
+                        Storyboard.TargetProperty="X" Duration="0:0:1" Completed="ObjectAnimationUsingKeyFrames_Completed">
+                        <DiscreteObjectKeyFrame KeyTime="0:0:0" Value="0" />
+                        <DiscreteObjectKeyFrame KeyTime="0:0:.2" Value="-60" />
+                        <DiscreteObjectKeyFrame KeyTime="0:0:.4" Value="-120" />
+                        <DiscreteObjectKeyFrame KeyTime="0:0:.6" Value="-180" />
+                        <DiscreteObjectKeyFrame KeyTime="0:0:.8" Value="-240" />
+                        <DiscreteObjectKeyFrame KeyTime="0:0:1" Value="100" />
+                    </ObjectAnimationUsingKeyFrames>
+                </Storyboard>
+            </Canvas.Resources>
+            <Path x:Name="ExplodePath"
+                IsHitTestVisible="True"
+                Height="100"
+                Width="120"  
+                d:LayoutOverrides="None"
+                d:LastTangent="0,0" 
+                Stroke="Gray"
+                StrokeThickness="1"  
+                HorizontalAlignment="Stretch" 
+                VerticalAlignment="Stretch"       
+                Margin="0" 
+                Stretch="Fill"
+                Data="M0,8.660254 L5,17.320508 15,17.320508 20,8.660254 15,0 5,0 0,8.660254 z"
+                Canvas.Top="0"
+                Canvas.Left="0">
+                <Path.Fill>
+                    <ImageBrush x:Name="ExplodeImageBrush"
+                            Stretch="None" 
+                            AlignmentX="Left" 
+                            AlignmentY="Top"
+                            ImageSource="/Tff.Panzer;component/Images/explode.jpg">
+                        <ImageBrush.Transform>
+                            <TransformGroup>
+                                <TranslateTransform x:Name="ExplodeTranslateTransform"
+                                                    X="0" 
+                                                    Y="0"/>
+                                <ScaleTransform x:Name="ExplodeScaleTransform"
+                                                ScaleX="2" 
+                                                ScaleY="2" />
+                            </TransformGroup>
+                        </ImageBrush.Transform>
+                    </ImageBrush>
+                </Path.Fill>
+            </Path>
+        </Canvas>
+        <Canvas x:Name="HexInfoCanvas">
+            <TextBlock x:Name="HexInfoTextBlock"
+                    TextAlignment="Center"
+                    Canvas.Left="30" 
+                    Canvas.Top="5" 
+                    Height="20" 
+                    Width="60"
+                    FontSize="10"
+                    FontFamily="Arial"
+                    Foreground="Black"
+                    TextWrapping="Wrap"
+                    Text="XXX"/>            
+        </Canvas>
+        <Canvas x:Name="CrosshairsCanvas">
+            <Path x:Name="CrosshairsPath" 
+                  IsHitTestVisible="False" 
+                  Height="100" 
+                  Width="120" 
+                  d:LayoutOverrides="None" 
+                  d:LastTangent="0,0" 
+                  Stroke="Transparent" 
+                  Stretch="Fill" 
+                  Data="M0,8.660254 L5,17.320508 15,17.320508 20,8.660254 15,0 5,0 0,8.660254 z" 
+                Canvas.Top="0"
+                Canvas.Left="0">
+                <Path.Fill>
+                    <ImageBrush x:Name="CrosshairsImageBrush" 
+                            Stretch="None" AlignmentX="Left" 
+                                AlignmentY="Top" 
+                                ImageSource="/Tff.Panzer;component/Images/hexsides.png">
+                        <ImageBrush.Transform>
+                            <TransformGroup>
+                                <TranslateTransform x:Name="CrosshairsTranslateTransform"
+                                        X="-240" 
+                                        Y="0"/>
+                                <ScaleTransform  x:Name="CrosshairsScaleTransform"
+                                        ScaleX="2" 
+                                        ScaleY="2" />
+                            </TransformGroup>
+                        </ImageBrush.Transform>
+                    </ImageBrush>
+                </Path.Fill>
+            </Path>
+        </Canvas>
+    </Canvas>
+</UserControl>

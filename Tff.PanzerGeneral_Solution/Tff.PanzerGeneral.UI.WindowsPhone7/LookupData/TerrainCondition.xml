@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot>
+<TerrainCondition>
+<TerrainConditionId>0</TerrainConditionId>
+<TerrainConditionDescription>Dry</TerrainConditionDescription>
+</TerrainCondition>
+<TerrainCondition>
+<TerrainConditionId>1</TerrainConditionId>
+<TerrainConditionDescription>Muddy</TerrainConditionDescription>
+</TerrainCondition>
+<TerrainCondition>
+<TerrainConditionId>2</TerrainConditionId>
+<TerrainConditionDescription>Frozen</TerrainConditionDescription>
+</TerrainCondition>
+</dataroot>

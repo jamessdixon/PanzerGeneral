@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Data.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="DataStoreContainer">
+          <EntitySet Name="Panzer_Scenario" EntityType="Data.Store.Panzer_Scenario" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Panzer_ScenarioTile" EntityType="Data.Store.Panzer_ScenarioTile" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="Panzer_Scenario">
+          <Key>
+            <PropertyRef Name="ScenarioId" />
+          </Key>
+          <Property Name="ScenarioId" Type="int" Nullable="false" />
+          <Property Name="ScenarioName" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="ScenarioDescription" Type="varchar" Nullable="false" MaxLength="5000" />
+          <Property Name="Turns" Type="int" Nullable="false" />
+          <Property Name="Year" Type="int" Nullable="false" />
+          <Property Name="Month" Type="int" Nullable="false" />
+          <Property Name="Day" Type="int" Nullable="false" />
+          <Property Name="TurnsPerDay" Type="int" Nullable="false" />
+          <Property Name="DaysPerTurn" Type="int" Nullable="false" />
+          <Property Name="CurrentWeather" Type="int" Nullable="false" />
+          <Property Name="WeatherZone" Type="int" Nullable="false" />
+          <Property Name="MaxUnitStrength" Type="int" Nullable="false" />
+          <Property Name="MaxUnitExperience" Type="int" Nullable="false" />
+          <Property Name="ActiveInd" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Panzer_ScenarioTile">
+          <Key>
+            <PropertyRef Name="ScenarioTileId" />
+          </Key>
+          <Property Name="ScenarioTileId" Type="int" Nullable="false" />
+          <Property Name="ScenarioId" Type="int" Nullable="false" />
+          <Property Name="ColumnNumber" Type="int" Nullable="false" />
+          <Property Name="RowNumber" Type="int" Nullable="false" />
+          <Property Name="TerrainId" Type="int" Nullable="false" />
+          <Property Name="TileNameId" Type="int" Nullable="false" />
+          <Property Name="NationId" Type="int" Nullable="false" />
+          <Property Name="SideId" Type="int" Nullable="false" />
+          <Property Name="RoadConnectivityInd" Type="bit" Nullable="false" />
+          <Property Name="DeployTileInd" Type="bit" Nullable="false" />
+          <Property Name="SupplyTileInd" Type="bit" Nullable="false" />
+          <Property Name="VictoryTileInd" Type="bit" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Data" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="PanzerEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Panzer_Scenario" EntityType="Data.Panzer_Scenario" />
+          <EntitySet Name="Panzer_ScenarioTile" EntityType="Data.Panzer_ScenarioTile" />
+        </EntityContainer>
+        <EntityType Name="Panzer_Scenario">
+          <Key>
+            <PropertyRef Name="ScenarioId" />
+          </Key>
+          <Property Name="ScenarioId" Type="Int32" Nullable="false" />
+          <Property Name="ScenarioName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ScenarioDescription" Type="String" Nullable="false" MaxLength="5000" Unicode="false" FixedLength="false" />
+          <Property Name="Turns" Type="Int32" Nullable="false" />
+          <Property Name="Year" Type="Int32" Nullable="false" />
+          <Property Name="Month" Type="Int32" Nullable="false" />
+          <Property Name="Day" Type="Int32" Nullable="false" />
+          <Property Name="TurnsPerDay" Type="Int32" Nullable="false" />
+          <Property Name="DaysPerTurn" Type="Int32" Nullable="false" />
+          <Property Name="CurrentWeather" Type="Int32" Nullable="false" />
+          <Property Name="WeatherZone" Type="Int32" Nullable="false" />
+          <Property Name="MaxUnitStrength" Type="Int32" Nullable="false" />
+          <Property Name="MaxUnitExperience" Type="Int32" Nullable="false" />
+          <Property Name="ActiveInd" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Panzer_ScenarioTile">
+          <Key>
+            <PropertyRef Name="ScenarioTileId" />
+          </Key>
+          <Property Name="ScenarioTileId" Type="Int32" Nullable="false" />
+          <Property Name="ScenarioId" Type="Int32" Nullable="false" />
+          <Property Name="ColumnNumber" Type="Int32" Nullable="false" />
+          <Property Name="RowNumber" Type="Int32" Nullable="false" />
+          <Property Name="TerrainId" Type="Int32" Nullable="false" />
+          <Property Name="TileNameId" Type="Int32" Nullable="false" />
+          <Property Name="NationId" Type="Int32" Nullable="false" />
+          <Property Name="SideId" Type="Int32" Nullable="false" />
+          <Property Name="RoadConnectivityInd" Type="Boolean" Nullable="false" />
+          <Property Name="DeployTileInd" Type="Boolean" Nullable="false" />
+          <Property Name="SupplyTileInd" Type="Boolean" Nullable="false" />
+          <Property Name="VictoryTileInd" Type="Boolean" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DataStoreContainer" CdmEntityContainer="PanzerEntities">
+          <EntitySetMapping Name="Panzer_Scenario"><EntityTypeMapping TypeName="Data.Panzer_Scenario"><MappingFragment StoreEntitySet="Panzer_Scenario">
+            <ScalarProperty Name="ScenarioId" ColumnName="ScenarioId" />
+            <ScalarProperty Name="ScenarioName" ColumnName="ScenarioName" />
+            <ScalarProperty Name="ScenarioDescription" ColumnName="ScenarioDescription" />
+            <ScalarProperty Name="Turns" ColumnName="Turns" />
+            <ScalarProperty Name="Year" ColumnName="Year" />
+            <ScalarProperty Name="Month" ColumnName="Month" />
+            <ScalarProperty Name="Day" ColumnName="Day" />
+            <ScalarProperty Name="TurnsPerDay" ColumnName="TurnsPerDay" />
+            <ScalarProperty Name="DaysPerTurn" ColumnName="DaysPerTurn" />
+            <ScalarProperty Name="CurrentWeather" ColumnName="CurrentWeather" />
+            <ScalarProperty Name="WeatherZone" ColumnName="WeatherZone" />
+            <ScalarProperty Name="MaxUnitStrength" ColumnName="MaxUnitStrength" />
+            <ScalarProperty Name="MaxUnitExperience" ColumnName="MaxUnitExperience" />
+            <ScalarProperty Name="ActiveInd" ColumnName="ActiveInd" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Panzer_ScenarioTile"><EntityTypeMapping TypeName="Data.Panzer_ScenarioTile"><MappingFragment StoreEntitySet="Panzer_ScenarioTile">
+            <ScalarProperty Name="ScenarioTileId" ColumnName="ScenarioTileId" />
+            <ScalarProperty Name="ScenarioId" ColumnName="ScenarioId" />
+            <ScalarProperty Name="ColumnNumber" ColumnName="ColumnNumber" />
+            <ScalarProperty Name="RowNumber" ColumnName="RowNumber" />
+            <ScalarProperty Name="TerrainId" ColumnName="TerrainId" />
+            <ScalarProperty Name="TileNameId" ColumnName="TileNameId" />
+            <ScalarProperty Name="NationId" ColumnName="NationId" />
+            <ScalarProperty Name="SideId" ColumnName="SideId" />
+            <ScalarProperty Name="RoadConnectivityInd" ColumnName="RoadConnectivityInd" />
+            <ScalarProperty Name="DeployTileInd" ColumnName="DeployTileInd" />
+            <ScalarProperty Name="SupplyTileInd" ColumnName="SupplyTileInd" />
+            <ScalarProperty Name="VictoryTileInd" ColumnName="VictoryTileInd" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="PanzerEntities">
+        <EntityTypeShape EntityType="Data.Panzer_Scenario" Width="1.5" PointX="0.75" PointY="0.75" Height="3.7109993489583326" IsExpanded="true" />
+        <EntityTypeShape EntityType="Data.Panzer_ScenarioTile" Width="1.5" PointX="2.75" PointY="0.75" Height="3.3263964843749996" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

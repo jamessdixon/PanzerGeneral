@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot>
+<TerrainGroup>
+<TerrainGroupId>0</TerrainGroupId>
+<TerrainGroupDescription>Land</TerrainGroupDescription>
+</TerrainGroup>
+<TerrainGroup>
+<TerrainGroupId>1</TerrainGroupId>
+<TerrainGroupDescription>Sea</TerrainGroupDescription>
+</TerrainGroup>
+<TerrainGroup>
+<TerrainGroupId>2</TerrainGroupId>
+<TerrainGroupDescription>SeaAndLand</TerrainGroupDescription>
+</TerrainGroup>
+</dataroot>

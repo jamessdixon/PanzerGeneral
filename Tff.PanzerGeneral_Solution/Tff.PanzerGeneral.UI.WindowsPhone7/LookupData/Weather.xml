@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot>
+<Weather>
+<WeatherId>0</WeatherId>
+<WeatherDescription>Fair</WeatherDescription>
+</Weather>
+<Weather>
+<WeatherId>1</WeatherId>
+<WeatherDescription>Cloudy</WeatherDescription>
+</Weather>
+<Weather>
+<WeatherId>2</WeatherId>
+<WeatherDescription>Rain</WeatherDescription>
+</Weather>
+<Weather>
+<WeatherId>3</WeatherId>
+<WeatherDescription>Snow</WeatherDescription>
+</Weather>
+</dataroot>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot>
+<WeatherZone>
+<WeatherZoneId>0</WeatherZoneId>
+<WeatherZoneDescription>Desert</WeatherZoneDescription>
+</WeatherZone>
+<WeatherZone>
+<WeatherZoneId>1</WeatherZoneId>
+<WeatherZoneDescription>Mediterrian</WeatherZoneDescription>
+</WeatherZone>
+<WeatherZone>
+<WeatherZoneId>2</WeatherZoneId>
+<WeatherZoneDescription>Western Europe</WeatherZoneDescription>
+</WeatherZone>
+<WeatherZone>
+<WeatherZoneId>3</WeatherZoneId>
+<WeatherZoneDescription>Eastern Europe</WeatherZoneDescription>
+</WeatherZone>
+</dataroot>

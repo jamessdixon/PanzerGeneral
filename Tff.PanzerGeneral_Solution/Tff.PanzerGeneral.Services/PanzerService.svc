@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Tff.Panzer.Services.PanzerService" CodeBehind="PanzerService.svc.cs" %>

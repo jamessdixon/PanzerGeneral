@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot>
+<Scenario>
+<ScenarioId>0</ScenarioId>
+<ScenarioName>POLAND</ScenarioName>
+<ScenarioDescription>September 1, 1939: The German army crosses the Polish border with their famous blitzkrieg. In 10 days they must capture Lodz and Kutno... the gates to Warsaw.</ScenarioDescription>
+<Turns>10</Turns>
+<Year>1939</Year>
+<Month>9</Month>
+<Day>1</Day>
+<TurnsPerDay>0</TurnsPerDay>
+<DaysPerTurn>0</DaysPerTurn>
+<CurrentWeather>1</CurrentWeather>
+<WeatherZone>3</WeatherZone>
+<MaxUnitStrength>15</MaxUnitStrength>
+<MaxUnitExperience>599</MaxUnitExperience>
+</Scenario>
+<Scenario>
+<ScenarioId>1</ScenarioId>
+<ScenarioName>WARSAW</ScenarioName>
+<ScenarioDescription>September 10, 1939: The Germans must capture Warsaw and end Polish resistance before the Allies react. </ScenarioDescription>
+<Turns>20</Turns>
+<Year>1939</Year>
+<Month>9</Month>
+<Day>11</Day>
+<TurnsPerDay>0</TurnsPerDay>
+<DaysPerTurn>0</DaysPerTurn>
+<CurrentWeather>1</CurrentWeather>
+<WeatherZone>3</WeatherZone>
+<MaxUnitStrength>15</MaxUnitStrength>
+<MaxUnitExperience>599</MaxUnitExperience>
+</Scenario>
+</dataroot>

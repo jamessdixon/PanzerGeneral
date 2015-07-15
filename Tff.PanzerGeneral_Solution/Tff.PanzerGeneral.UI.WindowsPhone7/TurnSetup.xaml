@@ -1,0 +1,75 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="Tff.Panzer.TurnSetup"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True">
+
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="TurnTitle"
+                   Grid.Row="0"
+                   Text="Turn Info"
+                   Style="{StaticResource PhoneTextTitle1Style}"/>
+
+        <TextBlock x:Name="CurrentWeatherTitle"
+                   Grid.Row="1"
+                   Text="Current Weather" 
+                   TextWrapping="Wrap"
+                   Style="{StaticResource PhoneTextTitle2Style}"/>
+
+        <TextBlock x:Name="CurrentGroundConditionTitle"
+                   Grid.Row="2"
+                   Text="Current Ground Conditions" 
+                   TextWrapping="Wrap"
+                   Style="{StaticResource PhoneTextTitle2Style}"/>
+
+        <TextBlock x:Name="ForecastWeatherTitle"
+                   Grid.Row="3"
+                   Text="Forecast Weather" 
+                   TextWrapping="Wrap"
+                   Style="{StaticResource PhoneTextTitle2Style}"/>
+
+        <TextBlock x:Name="ForecastGroundConditionTitle"
+                   Grid.Row="4"
+                   Text="Forecast Ground Conditions" 
+                   TextWrapping="Wrap"
+                   Style="{StaticResource PhoneTextTitle2Style}"/>
+
+        <TextBlock x:Name="StatusTitle"
+                   Grid.Row="5"
+                   Text="LOADING..." 
+                   Foreground="Red"
+                   TextWrapping="Wrap"
+                   Visibility="Collapsed"
+                   Style="{StaticResource PhoneTextTitle1Style}"/>
+
+
+        <Button Name="OkButton"
+                Content="OK" 
+                Grid.Row="6"
+                Height="100" 
+                HorizontalAlignment="Center"
+                VerticalAlignment="Bottom" 
+                Width="200" 
+                Click="OkButton_Click" />
+    </Grid>
+    
+</phone:PhoneApplicationPage>
